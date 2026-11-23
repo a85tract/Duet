@@ -1,0 +1,14 @@
+% Compiles Figures 1 and 2 on their own, one page each, at the size they have in the paper (they are drawn at the width
+% of a page, no scaling). Keep this file, figstyle.tex, fig_circuit.tex and fig_network.tex in one directory and run
+%   pdflatex figures.tex
+% The sources fig_circuit.tex and fig_network.tex are tikzpicture fragments for a figure* environment; in your own
+% document use the same preamble as below, then \input{fig_circuit} inside figure*.
+\documentclass[multi=tikzpicture,border=4pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.pathreplacing,positioning,calc}
+\input{figstyle}
+\newcommand{\tess}{Tesseract}
+\begin{document}
+\input{fig_circuit}
+\input{fig_network}
+\end{document}

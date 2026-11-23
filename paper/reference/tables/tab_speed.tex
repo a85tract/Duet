@@ -1,0 +1,17 @@
+\begin{tabular}{@{}cccccccccc@{}}
+\toprule
+& their network & \multicolumn{4}{c}{network alone} & \multicolumn{2}{c}{composition, Benchmark I} & \multicolumn{2}{c}{composition, Benchmark II} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+& & \multicolumn{2}{c}{Benchmark I} & \multicolumn{2}{c}{Benchmark II} & & & & \\
+$d$ & H100 & RTX PRO 6000 & GB10 & RTX PRO 6000 & GB10 & Grace platform & Spark platform & Grace platform & Spark platform \\
+\midrule
+3 & 47.4 & 1.18 & 4.26 & 1.18 & 5.01 & 1.2 & 4.4 & 1.2 & 5.1 \\
+ &  &  &  &  &  & {\tiny 1\,\%, 0.001\,s} & {\tiny 2\,\%, none} & {\tiny 0.5\,\%, 0.002\,s} & {\tiny 0.5\,\%, 0.002\,s} \\
+5 & 103.3 & 2.16 & 10.54 & 2.37 & 12.99 & 6.8 & 24.8 & 20.8 & 72.6 \\
+ &  &  &  &  &  & {\tiny 2\,\%, 0.05\,s} & {\tiny 2\,\%, 0.05\,s} & {\tiny 5\,\%, 0.02\,s} & {\tiny 5\,\%, 0.02\,s} \\
+7 & 185.2 & 3.28 & 19.26 & 4.08 & 24.38 & 27.1 & 93.7 & 152.7 & 193.8 \\
+ &  &  &  &  &  & {\tiny 2\,\%, none} & {\tiny 2\,\%, none} & {\tiny 10\,\%, none} & {\tiny 2\,\%, none} \\
+9 & 302.2 & 5.14 & 32.44 & --- & --- & 66.4 & 236.1 & --- & --- \\
+ &  &  &  &  &  & {\tiny 2\,\%, none} & {\tiny 2\,\%, none} &  &  \\
+\bottomrule
+\end{tabular}

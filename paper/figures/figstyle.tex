@@ -1,0 +1,25 @@
+% Shared look of the four figures. Figs. 1 and 2 draw with these styles, and scripts/figures.py repeats the colours and
+% line weights for Figs. 3 and 4. Colours: Paul Tol's high-contrast scheme (colour-blind safe, three distinct greys in
+% greyscale), one meaning each in every figure:
+%   fnet  #004488  the network                    fcomp #BB5566  the composition with Tesseract
+%   black          baselines, errors and detection events of a shot
+%   fzchk #E9C87A  Z checks (tint of #DDAA33)     fxchk #EBEBEB  X checks (lightness 82 and 93)
+% Text 8 pt (\footnotesize, the caption is 9 pt). Lines 0.4 pt (fine detail), 0.6 pt (boxes, arrows, axes), 1.0 pt
+% (wires, exchange, data lines). One arrow tip, one box (rounded 1 pt, its fill gives its role).
+\definecolor{fnet}{HTML}{004488}
+\definecolor{fcomp}{HTML}{BB5566}
+\definecolor{fzchk}{HTML}{E9C87A}
+\definecolor{fxchk}{HTML}{EBEBEB}
+\colorlet{fnetbg}{fnet!10}
+\colorlet{fcompbg}{fcomp!26}
+\colorlet{fline}{black!85}
+\tikzset{
+  figbase/.style={x=1cm,y=1cm,font=\footnotesize,line width=0.6pt,draw=fline,line join=round,
+    >={Stealth[length=4pt,width=3.2pt]}},
+  fthin/.style={line width=0.4pt},
+  fmid/.style={line width=0.6pt},
+  fheavy/.style={line width=1pt},
+  fbox/.style={draw=fline,line width=0.6pt,rounded corners=1pt,fill=white,inner sep=2.5pt,minimum height=0.6cm,
+    align=center},
+  flow/.style={->,draw=fline,line width=0.6pt},
+}

@@ -1,0 +1,67 @@
+% Figure 2: the network and the composition, drawn at the width of the page (figure* environment, no scaling) in the
+% shared figure style of figstyle.tex. Blue boxes hold the learned weights, white boxes compute exactly, and the
+% rose box is Tesseract, as in Figs. 3 and 4.
+\begin{tikzpicture}[figbase,
+  card/.style={draw=fline,fill=white,fthin},
+  ev/.style={circle,fill=black,inner sep=0pt,minimum size=1.1mm},
+  learned/.style={fbox,fill=fnetbg},
+  exch/.style={<->,fheavy,draw=fnet},
+  key/.style={draw=fline,fthin,rounded corners=1pt}]
+\def\ya{6.3}\def\yk{4.4}
+% ---------- row 1: detection events of every block and the trunk ----------
+\foreach \y in {\ya,\yk}{
+  \foreach \k in {3,2,1,0}{\draw[card] (0.9+0.12*\k,\y-0.3+0.09*\k) rectangle +(1.0,0.6);}
+  \foreach \px/\py in {0.22/0.2,0.62/0.45,0.45/0.68,0.8/0.3}{\node[ev] at (0.9+\px,\y-0.3+\py*0.6+0.06) {};}
+  \draw[flow] (2.3,\y)--(3.35,\y);
+}
+\node[anchor=east] at (0.8,\ya) {block 1};
+\node[anchor=east] at (0.8,\yk) {block $K$};
+\node at (1.4,5.4) {$\vdots$};
+\node[anchor=north,align=center] at (1.05,3.9) {detection events\\on $L{+}1$ layers};
+\draw[draw=fnet!50,fthin,rounded corners=2pt] (2.75,3.8) rectangle (12.75,7.55);
+\node[anchor=north west] at (2.85,7.5) {trunk, shared by all blocks (Insight 3)};
+\foreach \y/\id in {\ya/a,\yk/b}{
+  \node[learned,minimum width=1.7cm] (s\id) at (4.2,\y) {stem};
+  \node[learned,minimum width=1.7cm] (r1\id) at (6.5,\y) {residual 1};
+  \node (r2\id) at (8.8,\y) {$\cdots$};
+  \node[learned,minimum width=1.7cm] (r7\id) at (11.1,\y) {residual 7};
+  \draw[flow] (s\id)--(r1\id);
+  \draw[flow] (r1\id)--(r2\id);
+  \draw[flow] (r2\id)--(r7\id);
+}
+\foreach \x in {5.35,7.65,9.95,12.25}{\draw[exch] (\x,\ya-0.33)--(\x,\yk+0.33);}
+\node[align=center] at (6.5,5.35) {exchange at\\CNOT and S\\(Insight 1)};
+% ---------- trunk output to the read-out ----------
+\draw[fmid] (r7a.east)--(13.2,\ya)--(13.2,3.35)--(4.95,3.35);
+\draw[fmid] (r7b.east)--(13.2,\yk);
+\draw[flow] (4.95,3.35)--(4.95,2.95);
+\node[anchor=south] at (10.4,3.35) {features};
+% ---------- row 2: gate table, per-layer read-out, soft XOR, score ----------
+\node[fbox,minimum width=2.0cm] (tab) at (0.75,1.6) {gate table\\(exact, GF(2))};
+\draw[learned] (2.75,0.3) rectangle (7.15,2.95);
+\node[anchor=north] at (4.95,2.9) {per-layer read-out (Insight 2)};
+\foreach \t in {0,...,6}{\foreach \j in {0,1,2}{
+  \pgfmathsetmacro{\sh}{18+9*mod(\t*3+\j*5,7)}
+  \filldraw[fthin,draw=fnet!55,fill=fnet!\sh] (3.4+0.5*\t,1.17+0.36*\j) rectangle +(0.44,0.3);
+}}
+\node[anchor=east] at (3.35,1.67) {$j$};
+\node[anchor=north] at (5.07,1.1) {layers $t=0,\dots,L$};
+\node[anchor=north] at (4.95,0.75) {one logit $l_{P,t,j}$ per cell};
+\draw[flow] (tab.east)--(2.75,1.6) node[midway,above=1pt] {$r_P(t)$};
+\node[fbox,minimum width=1.95cm] (xor) at (9.575,1.6) {soft XOR\\over layers $t$};
+\draw[flow] (7.15,1.6)--(xor.west);
+\node[fbox,minimum width=1.5cm] (sc) at (12.75,1.6) {score $c_P$};
+\draw[flow] (xor.east)--(sc.west) node[midway,above=1pt] {$z_{P,j}$};
+\draw[flow] (12.75,0.45)--(sc.south);
+\node[anchor=north] at (12.75,0.45) {signs $g_{P,j}$};
+\node[fbox,minimum width=2.15cm] (out) at (16.025,1.6) {flip product $P$\\if $c_P>0$};
+\draw[flow] (sc.east)--(out.west);
+% ---------- composition: unsure shots go to Tesseract ----------
+\node[fbox,fill=fcompbg,minimum width=2.8cm] (tess) at (15.7,5.35) {\tess: 21 trials,\\one per CPU core};
+\draw[flow] (out.north)--(out.north|-tess.south) node[midway,left=2pt,align=right] {if $\min_P|c_P|$\\${}\le t_f$};
+% ---------- key ----------
+\node[anchor=east] (k2) at (17.1,7.17) {exact};
+\draw[key,fill=white] ($(k2.west)+(-0.38,-0.12)$) rectangle +(0.34,0.24);
+\node[anchor=east] (k1) at ($(k2.west)+(-0.75,0)$) {learned};
+\draw[key,fill=fnetbg] ($(k1.west)+(-0.38,-0.12)$) rectangle +(0.34,0.24);
+\end{tikzpicture}

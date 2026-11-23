@@ -1,0 +1,14 @@
+Two data files from MarcSerraPeralta/data-lom-decoders (the data repository of Serra-Peralta, Shaw, Terhal, "Decoding
+across transversal Clifford gates in the surface code", arXiv 2505.13599, PRX Quantum 7, 010335), commit 06407b4
+(2026-02-20), MIT License (LICENSE below, copied unchanged). They are copied unchanged; duet/bench_sets.py reads them
+(results/bench/DESIGN.md, families lom_2q and lom_deep).
+
+  20250130_cliffords_modulo_paulis_and_swap.txt
+      from two-qubit-clifford_experiments_lom_decoder/ (the same bytes as two-qubit-clifford_experiments_generation/);
+      SHA-256 63f9e4c13483e6f9021b2131cf9b85697979d16c6a20eac9450481cbb72f3332. The 360 two-qubit Cliffords modulo
+      Paulis and SWAP, each as CIRCUIT, CIRCUIT INVERSE and TOTAL CIRCUIT (the two in sequence) in layers of H, S, I
+      or one CX, separated by TICK (built by generate_two-qubit-clifford_experiments.ipynb with stim).
+  logical_circuit_deep_logical_32_layers_4_qubits.stim
+      from deep-clifford_experiments_lom_decoder/deep_logical_circuits/; SHA-256
+      35578f042ff5df785c3bb6482c4d62d8c22fa4aea17483bbd4cdb59a3ba80671. The logical circuit of the deep four-block
+      experiment: RX on four qubits, then 32 layers, each a gate from {I, X, Y, Z, H} per qubit and two CX.

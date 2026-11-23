@@ -1,0 +1,71 @@
+% Figure 1: a circuit on K = 3 blocks (a) and how a CNOT copies an X error between two blocks (b). Drawn at the width
+% of the page (figure* environment, no scaling) in the shared figure style of figstyle.tex.
+\begin{tikzpicture}[figbase,
+  wire/.style={fheavy,draw=black!55},
+  gate/.style={fbox,minimum height=0.5cm,minimum width=0.5cm,inner sep=1.5pt},
+  dq/.style={circle,draw=fline,fill=white,fthin,minimum size=2.6mm,inner sep=0pt},
+  err/.style={circle,draw=black,fill=black,fthin,minimum size=3.6mm,inner sep=0pt,text=white,font=\footnotesize\bfseries},
+  flag/.style={circle,fill=black,minimum size=1.7mm,inner sep=0pt},
+  chk/.style={draw=fline,fthin},
+  panel/.style={anchor=north west,font=\footnotesize\bfseries,inner sep=0pt}]
+% ---------- (a) the circuit ----------
+\begin{scope}[shift={(0,4.6)}]
+  \node[panel] at (0,2.85) {(a)};
+  \foreach \y/\b in {1.8/A,0.9/B,0/C}{
+    \node[anchor=east] at (1.35,\y) {block \b};
+    \draw[wire] (2.05,\y)--(7.75,\y) (9.05,\y)--(12.7,\y);
+    \node at (8.4,\y) {$\cdots$};
+  }
+  \foreach \y/\s in {1.8/0,0.9/+,0/0}{\node[gate,minimum width=0.82cm] at (2.05,\y) {$|\s\rangle_L$};}
+  \foreach \y/\m in {1.8/Z,0.9/X,0/Z}{\node[gate,minimum width=0.82cm] at (12.7,\y) {$M_\m$};}
+  % layer 1: CNOT A->B and H on C; layer 2: CNOT B->C and S on A; layer L: CNOT C->A with B idle
+  \foreach \x/\c/\t in {3.2/1.8/0.9, 5.6/0.9/0, 10.4/0/1.8}{
+    \draw[fmid] (\x,\c)--(\x,\t);
+    \fill[fline] (\x,\c) circle (0.075);
+    \draw[fmid,fill=white] (\x,\t) circle (0.15);
+    \draw[fmid] (\x-0.15,\t)--(\x+0.15,\t) (\x,\t-0.15)--(\x,\t+0.15);
+  }
+  \node[gate] at (3.2,0) {H};
+  \node[gate] at (5.6,1.8) {S};
+  \foreach \x in {4.15,6.55,11.35}{\node[fbox,rotate=90,minimum width=2.5cm,minimum height=0.55cm,inner sep=1pt] at (\x,0.9) {syndrome round};}
+  \draw[fmid,decorate,decoration={brace,amplitude=4pt}] (2.9,2.4)--(11.65,2.4)
+    node[midway,above=4pt] {$L$ layers, each followed by one syndrome round on every block};
+  \draw[fmid,decorate,decoration={brace,amplitude=4pt}] (13.2,2.1)--(13.2,-0.3)
+    node[midway,right=5pt,align=left] {reliable\\products};
+\end{scope}
+% ---------- (b) the CNOT copies an X error ----------
+\def\patch#1#2#3#4{% origin x, origin y, X error on the centre qubit (0/1), flagged checks (0/1)
+  \begin{scope}[shift={(#1,#2)}]
+    % weight-4 checks: Z where i+j is even, X where it is odd
+    \foreach \i in {0,1}{\foreach \j in {0,1}{
+      \pgfmathtruncatemacro{\pty}{mod(\i+\j,2)}
+      \ifnum\pty=0 \filldraw[chk,fill=fzchk] (0.9*\i,0.9*\j) rectangle +(0.9,0.9);
+      \else \filldraw[chk,fill=fxchk] (0.9*\i,0.9*\j) rectangle +(0.9,0.9);\fi
+    }}
+    % weight-2 boundary checks: X on top and bottom, Z on left and right
+    \filldraw[chk,fill=fxchk] (0.9,1.8) arc[start angle=180,end angle=0,radius=0.45] -- cycle;
+    \filldraw[chk,fill=fxchk] (0,0) arc[start angle=180,end angle=360,radius=0.45] -- cycle;
+    \filldraw[chk,fill=fzchk] (0,1.8) arc[start angle=90,end angle=270,radius=0.45] -- cycle;
+    \filldraw[chk,fill=fzchk] (1.8,0) arc[start angle=-90,end angle=90,radius=0.45] -- cycle;
+    \ifnum#4=1 \node[flag] at (0.45,0.45) {}; \node[flag] at (1.35,1.35) {};\fi
+    \foreach \i in {0,1,2}{\foreach \j in {0,1,2}{\node[dq] at (0.9*\i,0.9*\j) {};}}
+    \ifnum#3=1 \node[err] at (0.9,0.9) {X};\fi
+  \end{scope}}
+\node[panel] at (0,3.75) {(b)};
+\patch{1.0}{0.75}{1}{0}
+\patch{4.0}{0.75}{0}{0}
+\patch{9.9}{0.75}{1}{1}
+\patch{12.9}{0.75}{1}{1}
+\foreach \x/\b in {1.9/A,4.9/B,10.8/A,13.8/B}{\node[anchor=base] at (\x,-0.05) {block \b};}
+\node[anchor=south] at (3.4,3.05) {an $X$ error hits one data qubit of A};
+\node[anchor=south,align=center] at (12.3,3.05) {the CNOT copies it to B, and\\both blocks flag the same two checks};
+\draw[flow] (6.6,1.95)--(9.1,1.95) node[midway,above=1pt] {CNOT, A controls B};
+\begin{scope}[shift={(7.0,1.25)}]
+  \foreach \y/\c/\t in {0/fzchk/Z check,-0.42/fxchk/X check}{
+    \filldraw[chk,fill=\c] (0,\y-0.12) rectangle +(0.34,0.24);
+    \node[anchor=west] at (0.42,\y) {\t};
+  }
+  \node[flag] at (0.17,-0.84) {};
+  \node[anchor=west] at (0.42,-0.84) {flagged check};
+\end{scope}
+\end{tikzpicture}

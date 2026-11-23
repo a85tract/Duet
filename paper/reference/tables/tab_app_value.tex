@@ -1,0 +1,24 @@
+% fresh_main.py from data/fresh_test
+\begin{tabular}{@{}cclcrrrrrrr@{}}
+\toprule
+& & & & & \multicolumn{2}{c}{development failures} & \multicolumn{2}{c}{fresh test} & \multicolumn{2}{c}{fresh test, $f=20\,\%$} \\
+\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
+benchmark & $d$ & platform & $f$ & cap per layer & this row & best row & failures & $\mu$s per layer & failures & $\mu$s per layer \\
+\midrule
+I & 3 & Grace & 1\,\% & 0.001\,s & 30\,357 & 30\,057 (10\,\%) & 118\,764 & 1.2 & 117\,766 & 1.8 \\
+I & 5 & Grace & 2\,\% & 0.05\,s & 2893 & 2874 (10\,\%) & 11\,662 & 6.8 & 11\,585 & 24.3 \\
+I & 7 & Grace & 2\,\% & none & 264 & 262 (5\,\%) & 1087 & 27.1 & 1080 & 96.4 \\
+I & 9 & Grace & 2\,\% & none & 34 & 34 (2\,\%) & 104 & 66.4 & 102 & 270.0 \\
+I & 3 & Spark & 2\,\% & none & 30\,188 & 30\,057 (10\,\%) & 118\,101 & 4.4 & 117\,770 & 6.6 \\
+I & 5 & Spark & 2\,\% & 0.05\,s & 2893 & 2874 (10\,\%) & 11\,662 & 24.8 & 11\,585 & 86.0 \\
+I & 7 & Spark & 2\,\% & none & 264 & 262 (5\,\%) & 1087 & 93.7 & 1237 & 155.1 \\
+I & 9 & Spark & 2\,\% & none & 34 & 34 (2\,\%) & 104 & 236.1 & 310 & 287.6 \\
+\midrule
+II & 3 & Grace & 0.5\,\% & 0.002\,s & 6349 & 6300 (10\,\%) & 2818 & 1.2 & 2763 & 3.3 \\
+II & 5 & Grace & 5\,\% & 0.02\,s & 4490 & 4484 (10\,\%) & 1520 & 20.8 & 1519 & 49.3 \\
+II & 7 & Grace & 10\,\% & none & 358 & 357 (20\,\%) & 1186 & 152.7 & 1186 & 198.0 \\
+II & 3 & Spark & 0.5\,\% & 0.002\,s & 6349 & 6300 (10\,\%) & 2818 & 5.1 & 2763 & 9.9 \\
+II & 5 & Spark & 5\,\% & 0.02\,s & 4491 & 4485 (10\,\%) & 1520 & 72.6 & 1550 & 107.8 \\
+II & 7 & Spark & 2\,\% & none & 372 & 371 (5\,\%) & 1209 & 193.8 & 3605 & 159.9 \\
+\bottomrule
+\end{tabular}

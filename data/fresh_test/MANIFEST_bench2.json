@@ -1,0 +1,12840 @@
+{
+"version": 1,
+"run": "",
+"purpose": "bench2",
+"seed_base": "18446100000000000000",
+"seed_range": [
+"18446140000000000000",
+"18446150000000000000"
+],
+"noise": "lukin",
+"plan": "fresh test sets: new seeds, the same circuit laws as the first test",
+"family": "lukin",
+"seed_rule": "FRESH_SEED_BASE + 4 10^13 + d 10^11 + D 10^8 + i (circuit i = 0-19 of depth D at distance d)",
+"circuit_rule": "the open benchmark's fixed lukin-family circuits (data/open_benchmark/MANIFEST.json, family and noise lukin, circuits i = 0-19; duet.bench_sets.lukin), unchanged; the same circuits, shots per circuit and mle_shots prefix as MANIFEST_bench2.json",
+"source_manifest_sha256": "94f6c041326f524a9410627f37db5dd436cae94f5631437992df459afa54f830",
+"points": [
+{
+"name": "lukin_D1_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 1,
+"L": 2,
+"K": 4,
+"shots": 8200,
+"mle_shots": 8200,
+"bplomr_shots": 620,
+"seeds": [
+"18446140300100000000",
+"18446140300100000020"
+],
+"circuits": [
+{
+"layers": "ZZXI 32++",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0
+]
+],
+"seed": "18446140300100000000"
+},
+{
+"layers": "IXII ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140300100000001"
+},
+{
+"layers": "YHHX 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300100000002"
+},
+{
+"layers": "IXYH 1++2",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300100000003"
+},
+{
+"layers": "IXZY ++10",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+0
+]
+],
+"seed": "18446140300100000004"
+},
+{
+"layers": "YIXH +2+0",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300100000005"
+},
+{
+"layers": "ZXIZ 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140300100000006"
+},
+{
+"layers": "YHII +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300100000007"
+},
+{
+"layers": "YHHI 23++",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+1
+]
+],
+"seed": "18446140300100000008"
+},
+{
+"layers": "HXII +2+0",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+0,
+3
+]
+],
+"seed": "18446140300100000009"
+},
+{
+"layers": "XIZX +03+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+0
+]
+],
+"seed": "18446140300100000010"
+},
+{
+"layers": "YYHY 1++2",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300100000011"
+},
+{
+"layers": "ZHIH 1++2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140300100000012"
+},
+{
+"layers": "IZYH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+3
+]
+],
+"seed": "18446140300100000013"
+},
+{
+"layers": "HXZH +2+0",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140300100000014"
+},
+{
+"layers": "XXZI 2++1",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300100000015"
+},
+{
+"layers": "XIZH ++01",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300100000016"
+},
+{
+"layers": "ZIHH 1++2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300100000017"
+},
+{
+"layers": "IYXH +0+2",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300100000018"
+},
+{
+"layers": "IHYZ 32++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140300100000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D2_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 2,
+"L": 4,
+"K": 4,
+"shots": 1200,
+"mle_shots": 1200,
+"bplomr_shots": 89,
+"seeds": [
+"18446140300200000000",
+"18446140300200000020"
+],
+"circuits": [
+{
+"layers": "XHIH +03+ YXIH 23++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300200000000"
+},
+{
+"layers": "ZXHY ++01 IXXZ +03+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300200000001"
+},
+{
+"layers": "IYZY ++01 HXIX 23++",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300200000002"
+},
+{
+"layers": "ZHII +0+2 IXXZ 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140300200000003"
+},
+{
+"layers": "HZZX +0+2 IYYZ 3+1+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300200000004"
+},
+{
+"layers": "XYHH +30+ YHYX +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300200000005"
+},
+{
+"layers": "IIHY 32++ IYII +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140300200000006"
+},
+{
+"layers": "IYXZ 32++ ZHYH 1+3+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300200000007"
+},
+{
+"layers": "XZYI +30+ HYZX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+]
+],
+"seed": "18446140300200000008"
+},
+{
+"layers": "XXHY +03+ IZXY +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2,
+3
+]
+],
+"seed": "18446140300200000009"
+},
+{
+"layers": "XXXH ++10 XIZI ++01",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300200000010"
+},
+{
+"layers": "XHZX ++10 IIZH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300200000011"
+},
+{
+"layers": "HZZI 1++2 HIIY 2++1",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300200000012"
+},
+{
+"layers": "HXXZ +0+2 XHZY +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140300200000013"
+},
+{
+"layers": "XYZX 3+1+ YHII 3+1+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140300200000014"
+},
+{
+"layers": "XHXI ++10 XXYZ ++01",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300200000015"
+},
+{
+"layers": "HZXY ++10 YXZX 1++2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300200000016"
+},
+{
+"layers": "XZHZ 2++1 HYYI ++01",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140300200000017"
+},
+{
+"layers": "HIHY 1++2 XXXX +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140300200000018"
+},
+{
+"layers": "YZXX 32++ ZYYY ++10",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+0
+]
+],
+"seed": "18446140300200000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D3_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 3,
+"L": 6,
+"K": 4,
+"shots": 1300,
+"mle_shots": 1300,
+"bplomr_shots": 91,
+"seeds": [
+"18446140300300000000",
+"18446140300300000020"
+],
+"circuits": [
+{
+"layers": "YZIX 1+3+ YYXX +0+2 XXHZ 1++2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+2,
+3
+]
+],
+"seed": "18446140300300000000"
+},
+{
+"layers": "XHZH 1++2 YHIY +0+2 IYZH ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140300300000001"
+},
+{
+"layers": "YHYH 2++1 XYZX 2++1 ZZYI +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300300000002"
+},
+{
+"layers": "YYXZ 2++1 IHZX 2++1 ZXXZ ++01",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300300000003"
+},
+{
+"layers": "XIXH ++01 ZXXI ++10 ZIYH 32++",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300300000004"
+},
+{
+"layers": "XIIX +2+0 IZXY 1++2 XYXI 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+3
+]
+],
+"seed": "18446140300300000005"
+},
+{
+"layers": "IZYH +0+2 XHZX ++01 IHHX 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140300300000006"
+},
+{
+"layers": "YZIZ 2++1 YXZX 2++1 XYHZ 3+1+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300300000007"
+},
+{
+"layers": "ZIIX ++01 YHHX 2++1 XXZI 23++",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300300000008"
+},
+{
+"layers": "ZZIZ 23++ HZII +2+0 ZYZH 23++",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140300300000009"
+},
+{
+"layers": "ZXYZ +2+0 ZHIY ++10 IZYZ ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300300000010"
+},
+{
+"layers": "IHHZ 1++2 XHYY +2+0 YZXH 32++",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2,
+3
+]
+],
+"seed": "18446140300300000011"
+},
+{
+"layers": "YXZI 1++2 HYXI +0+2 ZXYH +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300300000012"
+},
+{
+"layers": "HXYH 23++ HZZH 23++ ZZXY 3+1+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140300300000013"
+},
+{
+"layers": "YZHY +03+ XXXI +2+0 IYXZ ++10",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300300000014"
+},
+{
+"layers": "IYXY 1+3+ ZXYY +30+ IXHX 1++2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+]
+],
+"seed": "18446140300300000015"
+},
+{
+"layers": "XIZH +0+2 ZXXY 32++ IHZI ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140300300000016"
+},
+{
+"layers": "HIHY +03+ YYZH +30+ YZHH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140300300000017"
+},
+{
+"layers": "YHXH +2+0 ZXIX ++10 HXYX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300300000018"
+},
+{
+"layers": "IXZH 1+3+ IXIX 23++ YIIX 1++2",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140300300000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D4_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 4,
+"L": 8,
+"K": 4,
+"shots": 1100,
+"mle_shots": 1100,
+"bplomr_shots": 78,
+"seeds": [
+"18446140300400000000",
+"18446140300400000020"
+],
+"circuits": [
+{
+"layers": "ZIXX 23++ ZZYZ ++10 HZYX 1++2 HYYX 2++1",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300400000000"
+},
+{
+"layers": "HXZH 23++ XYIH +03+ ZIZY +2+0 ZYZI +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140300400000001"
+},
+{
+"layers": "IZZI ++01 IYZI +0+2 HZYH +30+ ZZIH 23++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300400000002"
+},
+{
+"layers": "ZYHI +0+2 YXYY 2++1 HXXZ 1+3+ IXXY 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140300400000003"
+},
+{
+"layers": "YHXH 3+1+ YYYI 1++2 IIXI 1+3+ YXXY 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300400000004"
+},
+{
+"layers": "IYXY 32++ IXIZ 1+3+ IHYX 1++2 YXXH 2++1",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140300400000005"
+},
+{
+"layers": "XZXH ++10 YIXX ++10 IYYH 1+3+ YIYZ +30+",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300400000006"
+},
+{
+"layers": "HYZZ +0+2 IYYY +30+ ZIIZ +03+ HXZI ++01",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140300400000007"
+},
+{
+"layers": "XZII ++10 XXHH 2++1 XHXI +0+2 ZXZH ++10",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140300400000008"
+},
+{
+"layers": "HZII +0+2 XIYX +03+ YXHZ 3+1+ HXZY +30+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300400000009"
+},
+{
+"layers": "YZYX ++10 YXIH 3+1+ YZXX +2+0 YIHI 23++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300400000010"
+},
+{
+"layers": "HIZI +03+ HXZI 1+3+ YZZZ ++01 YZXX ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140300400000011"
+},
+{
+"layers": "XZXZ ++10 IZXZ +30+ HHXI +2+0 YHHX +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300400000012"
+},
+{
+"layers": "YZHZ 3+1+ YZXH +30+ HXYY 2++1 IYZI +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300400000013"
+},
+{
+"layers": "IZZZ 1++2 YIYH 32++ YYYH +0+2 HYZH +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300400000014"
+},
+{
+"layers": "HHZX +2+0 XIZZ +03+ IYII ++01 ZXZH 32++",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300400000015"
+},
+{
+"layers": "YHXY ++10 YYYZ 2++1 HIHY 2++1 XYYH +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300400000016"
+},
+{
+"layers": "HHXZ 23++ IIZY 32++ XHXI 3+1+ YIZX +2+0",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+0,
+3
+]
+],
+"seed": "18446140300400000017"
+},
+{
+"layers": "IXII +30+ XIHH ++10 XYXY +03+ YZHY 23++",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300400000018"
+},
+{
+"layers": "HIZX 23++ YIXZ +2+0 YYYH 1++2 HYXI 3+1+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140300400000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D5_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 5,
+"L": 10,
+"K": 4,
+"shots": 670,
+"mle_shots": 670,
+"bplomr_shots": 55,
+"seeds": [
+"18446140300500000000",
+"18446140300500000020"
+],
+"circuits": [
+{
+"layers": "ZZZX +03+ XHZH 3+1+ YXZZ 1+3+ XHHZ +2+0 HHIZ 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140300500000000"
+},
+{
+"layers": "XHZY +30+ IYZH 32++ HIZY 1+3+ YHXI +30+ ZHHZ 1+3+",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140300500000001"
+},
+{
+"layers": "YIYY +30+ YZHZ +30+ ZHHY +2+0 XIXX +03+ IXIX 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140300500000002"
+},
+{
+"layers": "HIYZ +0+2 XZHZ 23++ ZZIH +0+2 YYHH 23++ HXYH ++01",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140300500000003"
+},
+{
+"layers": "ZIHX +2+0 XIHI 2++1 IYIH +03+ YYZH +0+2 XIIZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140300500000004"
+},
+{
+"layers": "XXIY +0+2 HIZX 23++ HZIZ 23++ XXXH 1+3+ ZHYX +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2,
+3
+]
+],
+"seed": "18446140300500000005"
+},
+{
+"layers": "YXXI 23++ YIYX +0+2 XYYY 32++ ZIHX 3+1+ XIZZ +30+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+2
+]
+],
+"seed": "18446140300500000006"
+},
+{
+"layers": "XZHZ 32++ IYIZ 2++1 IHIZ 3+1+ XHXH ++10 YXXI 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140300500000007"
+},
+{
+"layers": "YZYI 1+3+ HZYY 3+1+ IYZI 1+3+ IHIX 2++1 HYII 32++",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140300500000008"
+},
+{
+"layers": "YYZZ 1+3+ YHIZ 1+3+ XYHH 23++ IIZX +0+2 YXZY ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300500000009"
+},
+{
+"layers": "XIZY ++10 XHIZ 2++1 YIIX 3+1+ YZIH +03+ YYZH +03+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140300500000010"
+},
+{
+"layers": "ZXYY +03+ IXYY ++10 HHHH +2+0 HZZZ +30+ XZYH ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300500000011"
+},
+{
+"layers": "XYXI +30+ YHYY 23++ YHYY 2++1 IHYY ++10 IXYY +03+",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140300500000012"
+},
+{
+"layers": "IHXH ++01 ZYXZ 32++ YZYH ++10 IHXH 3+1+ YYZY +03+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300500000013"
+},
+{
+"layers": "HXYX 32++ YXXY +0+2 XHHH +2+0 HXHH ++01 HZHI +2+0",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300500000014"
+},
+{
+"layers": "HHXY 1+3+ YHZZ 3+1+ ZIHX 2++1 YZZY +0+2 IYYI ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300500000015"
+},
+{
+"layers": "HHYI ++01 XXZY +30+ IYZX ++01 ZYZY 23++ YYZZ +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140300500000016"
+},
+{
+"layers": "ZHII 2++1 IHYH +30+ ZHHI 23++ HIHZ +0+2 XXHH ++01",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300500000017"
+},
+{
+"layers": "XYIZ +0+2 ZHXI 32++ ZXIZ 1++2 YXHH ++01 ZHYX 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+3
+]
+],
+"seed": "18446140300500000018"
+},
+{
+"layers": "ZXHZ +03+ XHIX 2++1 ZYYI 32++ IIZX +0+2 YHIY 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300500000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D6_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 6,
+"L": 12,
+"K": 4,
+"shots": 500,
+"mle_shots": 470,
+"bplomr_shots": 28,
+"seeds": [
+"18446140300600000000",
+"18446140300600000020"
+],
+"circuits": [
+{
+"layers": "YZZI 32++ YYYI +30+ IYXZ +2+0 IIXZ 2++1 HZZI +0+2 YZYH +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300600000000"
+},
+{
+"layers": "ZZIY ++01 HHII 32++ ZYHY 1+3+ HHXY +0+2 XIYH +30+ XYYI 2++1",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300600000001"
+},
+{
+"layers": "XHYH ++01 HYIY +2+0 YZZX +30+ IIXY +03+ HIIX +2+0 ZHZZ +30+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140300600000002"
+},
+{
+"layers": "HZXH 2++1 YXXX +30+ XIIZ 32++ XHZZ ++10 XHIH 32++ IZIH 1+3+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300600000003"
+},
+{
+"layers": "XHII +2+0 XHIZ 23++ YIXI +03+ IHHH +30+ IIZZ 32++ ZXXX ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300600000004"
+},
+{
+"layers": "IIHH +03+ HYHH 1++2 ZYZX +03+ ZZYX 1++2 HIHZ +30+ HHHI ++10",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300600000005"
+},
+{
+"layers": "IHZH 1++2 YIII 3+1+ XHYY 3+1+ IXZI 3+1+ IHYH ++10 HHXY ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300600000006"
+},
+{
+"layers": "XIIH ++10 IYYZ ++10 YZZY 1++2 YXXH 23++ YZZI ++01 HHYZ +0+2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300600000007"
+},
+{
+"layers": "IYHX 32++ YYXI ++01 ZIXI 1+3+ IXHX 1+3+ IYIY +0+2 HYHX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140300600000008"
+},
+{
+"layers": "YXII 23++ ZHIY +0+2 ZZHH ++01 HZIH 1++2 IIHZ +2+0 YZXX +0+2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300600000009"
+},
+{
+"layers": "YHXI 3+1+ IYHZ ++10 IXXZ +03+ HIIH +2+0 YHIZ 3+1+ XZYY 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300600000010"
+},
+{
+"layers": "HXHZ ++01 YHXY 1+3+ XHIZ 2++1 IZXH +03+ HHII ++10 YXIY +03+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300600000011"
+},
+{
+"layers": "IHZZ ++01 YZZH 3+1+ HXXH 1+3+ XZZZ 2++1 XIZX +0+2 HXIY ++10",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300600000012"
+},
+{
+"layers": "IIYX 1++2 YXZY +2+0 XHHZ 3+1+ HXHX 1+3+ IZZX ++10 ZZZY ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300600000013"
+},
+{
+"layers": "IZYH 3+1+ IIZI +03+ IZIZ ++10 ZIXI +0+2 IZZY +30+ ZXXH +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300600000014"
+},
+{
+"layers": "ZXZY +0+2 XZXY 1++2 IHXH ++10 ZHHX 2++1 XZXH +2+0 XIXI +0+2",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140300600000015"
+},
+{
+"layers": "XYHY +2+0 XXIX +0+2 YIIZ 1++2 HXZI +03+ ZXHY 32++ YHXY +0+2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140300600000016"
+},
+{
+"layers": "ZIIY +0+2 IYHY 1+3+ ZHHX ++10 HIZH +0+2 XZYH 23++ XHII +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140300600000017"
+},
+{
+"layers": "YYIZ 2++1 HHYY +0+2 IXHI ++10 YIYX 32++ YYHI 3+1+ IHXZ +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300600000018"
+},
+{
+"layers": "HIHH ++10 XYXZ +30+ XZYY +2+0 ZIIZ 1+3+ YHZH 1+3+ HHXI +0+2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140300600000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D7_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 7,
+"L": 14,
+"K": 4,
+"shots": 500,
+"mle_shots": 220,
+"bplomr_shots": 24,
+"seeds": [
+"18446140300700000000",
+"18446140300700000020"
+],
+"circuits": [
+{
+"layers": "YHIX +30+ ZXXX 23++ HHIZ +0+2 ZZXY 3+1+ YYIX 1+3+ YYYI 1++2 XXYY 1++2",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140300700000000"
+},
+{
+"layers": "IYIZ 1++2 HHHZ 3+1+ HXXX ++10 IZHY 2++1 IIHY 2++1 ZZXY 1+3+ IHZH ++10",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+3
+]
+],
+"seed": "18446140300700000001"
+},
+{
+"layers": "IHIX 2++1 XYHI 2++1 HYZZ +30+ HIZH 3+1+ YXHY 3+1+ ZYII 3+1+ XHHI +0+2",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140300700000002"
+},
+{
+"layers": "ZYII +0+2 XHHY +2+0 XHXX 3+1+ ZIHI 32++ YXIY +2+0 XYYH 3+1+ XYXH 32++",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300700000003"
+},
+{
+"layers": "IXIX 1++2 IYHZ ++01 XYYI 3+1+ XYZY +0+2 YZIZ +03+ ZYZI 1+3+ ZHIY 3+1+",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300700000004"
+},
+{
+"layers": "YHHH 2++1 ZHHZ 32++ HZII 3+1+ XHXX 23++ XHIX +30+ ZIHZ 3+1+ IIHZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1,
+2
+]
+],
+"seed": "18446140300700000005"
+},
+{
+"layers": "YZII 23++ ZYHX 1+3+ ZXII 1++2 ZZYX ++10 IHHX ++01 HZXH 1++2 IYYI 1+3+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140300700000006"
+},
+{
+"layers": "XIHY +2+0 IIXY +0+2 HYHH 2++1 YHXX 1++2 YZYH 1+3+ IIZY 23++ XZHI +0+2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300700000007"
+},
+{
+"layers": "IIZH 1+3+ YXYI 2++1 YIZX ++01 IHYZ +0+2 YXHI +2+0 IHZI 23++ XHIY 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300700000008"
+},
+{
+"layers": "XIYH 2++1 YZZZ 2++1 IXZZ 1+3+ YYZH 3+1+ ZIHY +2+0 YXXH 2++1 XXIH 2++1",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300700000009"
+},
+{
+"layers": "YZII +03+ HIXX +2+0 XZYY +03+ XIZZ 3+1+ IYIX 3+1+ XIHH +0+2 ZXYX +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+1,
+3
+]
+],
+"seed": "18446140300700000010"
+},
+{
+"layers": "HYXI 1+3+ YXHH +30+ YIXX 3+1+ YYHY +03+ IZHY 1++2 IYHI 1+3+ YYHX +0+2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+0
+],
+[
+1,
+3
+]
+],
+"seed": "18446140300700000011"
+},
+{
+"layers": "XZHX +0+2 XYYX 1+3+ HZZI ++10 ZHYH 1++2 YZXH 3+1+ XHIX 1++2 ZYYI ++10",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0
+]
+],
+"seed": "18446140300700000012"
+},
+{
+"layers": "YXXX 3+1+ XXHI +0+2 ZYZH 1++2 HHHZ 3+1+ XYHH ++10 XZIZ 32++ YYHX ++01",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300700000013"
+},
+{
+"layers": "IHXX 1++2 XYZX +03+ ZZYY ++01 XYIZ ++10 YYXX ++10 ZZIY ++01 XYXI 2++1",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300700000014"
+},
+{
+"layers": "IHIH +30+ IHHH ++10 IXXY +0+2 HZXY +2+0 YHXI +2+0 XYYX 3+1+ IZZI 23++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300700000015"
+},
+{
+"layers": "YIXZ 23++ HIYH +2+0 XXHI 23++ IHYH 32++ HIYY +2+0 IIYY +2+0 XZHZ ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300700000016"
+},
+{
+"layers": "YYIX 32++ ZIIH 1+3+ XZZY +2+0 XHZX 23++ HZIZ +30+ XHHY +0+2 YHXH 32++",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140300700000017"
+},
+{
+"layers": "IZYI +2+0 ZIHX 2++1 ZXHZ +30+ ZXIH ++10 YHZH +2+0 YYIH 23++ YIZZ +2+0",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300700000018"
+},
+{
+"layers": "XXZZ ++10 IZYX 32++ IIZH 32++ HYYX ++10 ZHHX +30+ HIZH +2+0 ZHHZ ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140300700000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D8_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 8,
+"L": 16,
+"K": 4,
+"shots": 500,
+"mle_shots": 380,
+"bplomr_shots": 25,
+"seeds": [
+"18446140300800000000",
+"18446140300800000020"
+],
+"circuits": [
+{
+"layers": "XYIH ++10 IIYI +2+0 ZYYZ ++01 HHYI 1+3+ ZHZX 32++ ZZXI 1++2 IHXX +2+0 XHIY +2+0",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300800000000"
+},
+{
+"layers": "XZYY +0+2 ZIZZ 1+3+ IHZX 3+1+ IIXI 1+3+ IXZX +2+0 XYII 1++2 ZXHX ++01 ZIII 2++1",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140300800000001"
+},
+{
+"layers": "HYYH ++10 HXIH 32++ YIYY 32++ ZIYZ 1++2 YIHZ +2+0 YHIY 1++2 HYIY 32++ IHXH 32++",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140300800000002"
+},
+{
+"layers": "ZZXY 32++ YXIZ 1++2 IIXH ++10 HXYZ 32++ HIIX 1+3+ YHXZ +03+ HIHH ++10 IIXZ 3+1+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140300800000003"
+},
+{
+"layers": "ZZHY ++01 ZYYZ +30+ IXZZ +0+2 YYHY 3+1+ HXYY 2++1 HHZI 32++ ZYHH +30+ XYXX 2++1",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300800000004"
+},
+{
+"layers": "XHYI 1+3+ YHXZ +0+2 XXHX 23++ IHIZ 1++2 ZYYX ++01 ZXIH 1++2 YZXY 1++2 YXXY 23++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+2
+]
+],
+"seed": "18446140300800000005"
+},
+{
+"layers": "ZIYH 32++ HHYZ 2++1 IZII +2+0 YZYH +0+2 XHZZ 2++1 IXXZ +03+ HIZZ +03+ YXIZ 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300800000006"
+},
+{
+"layers": "HHYY 1+3+ XIYY 2++1 XYZZ 1++2 ZZHY +30+ YZIX 3+1+ YIHZ 3+1+ XHXH 2++1 YYZZ 1++2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140300800000007"
+},
+{
+"layers": "XXXI +03+ ZYYX 1++2 HIZX 2++1 YYIH +30+ IHHI +0+2 HXHZ ++10 YHXX 3+1+ ZIHX +03+",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140300800000008"
+},
+{
+"layers": "YHIZ +03+ ZZYI ++01 IZXZ 2++1 ZXHI ++10 YXXY +30+ HYIY +30+ ZIXH +0+2 YZIX 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140300800000009"
+},
+{
+"layers": "IHHX ++01 XXIX 1++2 IIZI 3+1+ ZIII ++01 ZZIY ++01 ZHHH +0+2 IIYX +2+0 ZXYY +0+2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140300800000010"
+},
+{
+"layers": "XIHI 3+1+ YZZZ 3+1+ IZIH 1+3+ IXYZ 23++ ZYXX 2++1 YXHZ +03+ HXZH 2++1 YXZZ +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140300800000011"
+},
+{
+"layers": "YYYY +03+ YZXH +0+2 XXHY 2++1 ZIYZ +0+2 HHHY +30+ IHHY +30+ ZYHX +0+2 HYIX 3+1+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140300800000012"
+},
+{
+"layers": "IZZI +03+ HHIZ 1+3+ YXXZ +2+0 ZXYX 1+3+ XZHH 23++ ZHXZ ++01 HYIY ++01 ZHZY ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140300800000013"
+},
+{
+"layers": "IYIY +2+0 IIIH 1++2 HIHZ +2+0 ZHYH ++01 ZHZX +0+2 XZXH ++01 YZIY +03+ HYIH +2+0",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300800000014"
+},
+{
+"layers": "IZIX ++01 HXXI ++01 HXIZ 23++ HIZX 32++ HZHY +03+ HIII +30+ HZXY ++10 YIYX 3+1+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140300800000015"
+},
+{
+"layers": "XHYH +0+2 XXHZ +30+ XHXX +03+ IHHH ++01 HHHX +0+2 YZYY +03+ IZZI +2+0 YYXX 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140300800000016"
+},
+{
+"layers": "HXXH ++10 IYIZ 1+3+ YZXY 1++2 IZXZ +2+0 ZZZX 1+3+ IYXZ +03+ IHXY +03+ YHYX ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300800000017"
+},
+{
+"layers": "YHXI +2+0 XXHI ++01 IZXX +0+2 YXHY +03+ IXYY 1++2 YHHH 23++ YXZH 23++ YIIY +30+",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+]
+],
+"seed": "18446140300800000018"
+},
+{
+"layers": "HYZI +30+ XZYI 1++2 ZIZI +0+2 HYIX 2++1 HXIZ 23++ YIII 1+3+ ZZIH 1+3+ YYYH 1+3+",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300800000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D9_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 9,
+"L": 18,
+"K": 4,
+"shots": 500,
+"mle_shots": 210,
+"bplomr_shots": 16,
+"seeds": [
+"18446140300900000000",
+"18446140300900000020"
+],
+"circuits": [
+{
+"layers": "HZZH ++10 HYZH +2+0 HHHX 1+3+ XHHH 2++1 ZIIX ++01 YYZI +0+2 HZZZ +30+ IXIH +2+0 XYIX +0+2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140300900000000"
+},
+{
+"layers": "ZIHZ 3+1+ HZHZ 32++ YIIZ +03+ YHIX 23++ HYIH 3+1+ IYYH 2++1 XHHX +2+0 IYXI 2++1 IHZX +30+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140300900000001"
+},
+{
+"layers": "ZHII 23++ ZIYX 1++2 ZHHI 2++1 HIYY 1++2 HZYX +03+ HIYI 32++ YZXH +03+ ZHIH ++10 HZXH 23++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300900000002"
+},
+{
+"layers": "YZIZ ++01 HXIX +0+2 XXHX +2+0 IIIH ++01 ZHZI ++01 XHIX +2+0 XHZH 2++1 IHIZ 1+3+ YHII +0+2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1,
+2
+]
+],
+"seed": "18446140300900000003"
+},
+{
+"layers": "HYIZ +0+2 HHXX +30+ XHHY 3+1+ YHZX 2++1 HXIZ +03+ XYYX 2++1 ZHYH 1++2 HXXY 23++ IXXX 2++1",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140300900000004"
+},
+{
+"layers": "ZHYZ +30+ YYXZ 1++2 IXXH +03+ XYII 1+3+ ZXXX ++01 HXYZ 2++1 IHXX +0+2 IXYI 1++2 YZHH +30+",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140300900000005"
+},
+{
+"layers": "IIXX +30+ ZXYH +2+0 HYHX 1+3+ ZXII 23++ HIXY 23++ YYYI ++10 XIHY ++10 YXIX ++10 HYXZ 32++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300900000006"
+},
+{
+"layers": "YZXH 3+1+ HXHZ 32++ YXXY 3+1+ ZXIY 2++1 HZZY 23++ IXHX 32++ HIZY ++10 IXIH 1+3+ YYXY +0+2",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300900000007"
+},
+{
+"layers": "XYYY 2++1 ZHXX 23++ XYII ++01 ZHYH +30+ XZYY +2+0 ZXYY +0+2 HIIH 1++2 YIIX 2++1 HYHY 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140300900000008"
+},
+{
+"layers": "ZYIZ ++10 YIZX 2++1 IXHI ++10 ZXZI 3+1+ YZZZ +0+2 IHHY 1+3+ ZIYZ 1+3+ XYIZ +0+2 XYYI 23++",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140300900000009"
+},
+{
+"layers": "HXHX ++10 IHYH 3+1+ IZHZ 1+3+ IIIY 2++1 XYII +03+ XZIX ++01 YZII 2++1 ZIXH ++10 HZXI ++01",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140300900000010"
+},
+{
+"layers": "YHYY 1+3+ HHXZ 2++1 ZHZH 32++ IXHZ 1+3+ IYIY 32++ IZHY 1+3+ ZYXX +0+2 HZHH 3+1+ HXYH 2++1",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140300900000011"
+},
+{
+"layers": "ZXYZ 32++ IHHZ +03+ IHXX +30+ YZZX ++01 HZXY 3+1+ ZXIH +2+0 IHIX 3+1+ IXZI 1++2 XYYY 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140300900000012"
+},
+{
+"layers": "IHHY +03+ HYHI 32++ XHIH ++10 YYZZ +2+0 XIHY 1++2 HZYX 3+1+ ZZXX ++01 HXYH +2+0 YHZX 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140300900000013"
+},
+{
+"layers": "ZHHZ ++01 IIYI 2++1 XXII ++01 IIXY ++10 ZYXY 1++2 YZHZ +0+2 IZHI +0+2 HHZX +30+ YXZX 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140300900000014"
+},
+{
+"layers": "XHIX 23++ HIYH 1+3+ IZYZ 23++ XZXY 23++ ZYHY 23++ YZIX +0+2 IIHZ ++10 YXXY +03+ XHIY +03+",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300900000015"
+},
+{
+"layers": "XZHY +0+2 HXXZ +0+2 ZIXZ ++01 XXYZ +30+ ZIZI 1++2 YIZI +03+ HYHY ++10 ZZIH +30+ YHXH 23++",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140300900000016"
+},
+{
+"layers": "XHHY +0+2 IHXH 23++ IIIX ++01 IIXZ ++01 IZYZ 32++ YIXY 32++ IXXZ ++01 XZYX 32++ IIYZ +30+",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140300900000017"
+},
+{
+"layers": "IHYZ ++10 HZHZ 32++ XZXZ 3+1+ YYZI 3+1+ IIXI 1++2 YHZY +0+2 ZYHH 2++1 XHIH 3+1+ HYZZ 3+1+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140300900000018"
+},
+{
+"layers": "YHXH 1++2 ZZZZ 3+1+ YYYH 23++ HIIY ++10 YYZX 3+1+ ZYHH ++10 IYZI 2++1 ZXHY 1+3+ HZHI ++10",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140300900000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D10_d3_lukin_p3",
+"family": "lukin",
+"d": 3,
+"noise": "lukin",
+"p": 0.003,
+"depth": 10,
+"L": 20,
+"K": 4,
+"shots": 500,
+"mle_shots": 250,
+"bplomr_shots": 20,
+"seeds": [
+"18446140301000000000",
+"18446140301000000020"
+],
+"circuits": [
+{
+"layers": "HIZZ ++10 IYHZ 2++1 XXHX +30+ HIYY 32++ YIZI 32++ ZXYZ 1++2 HYZI 3+1+ YXXY 23++ YHZI 23++ ZIHX ++10",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140301000000000"
+},
+{
+"layers": "ZXZX 32++ HXXY 1+3+ XZXI +30+ IYYX 1+3+ YHXZ ++01 YIII 3+1+ YXYY 23++ IZIX 32++ ZXXZ 1+3+ YIIX 1+3+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140301000000001"
+},
+{
+"layers": "IYYZ 2++1 HZZX +30+ HIXI 32++ YXHY 32++ IYYI 2++1 YYXZ 1+3+ ZHII 23++ ZZIY 1++2 XIXX +2+0 HZXY 1++2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140301000000002"
+},
+{
+"layers": "IXZX +2+0 YYHX ++01 ZYYZ 32++ IYXX 3+1+ ZZII ++10 HIZH 3+1+ XZYI +30+ HZZI 1+3+ YHXX 1++2 YHHI 32++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140301000000003"
+},
+{
+"layers": "ZXYY +03+ XYIH +30+ HHYH 1+3+ YHXH 23++ ZHIY 1+3+ IHXI +03+ HXZZ 3+1+ XHHI +30+ YHYY +2+0 ZYXI ++10",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140301000000004"
+},
+{
+"layers": "IYIY ++01 HZYH 1++2 YIZY 1+3+ XYYX +0+2 YHXZ 1++2 IHIZ 3+1+ ZZIX 1+3+ ZZHI 3+1+ XIII 2++1 IHHH +03+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140301000000005"
+},
+{
+"layers": "HYHX 32++ ZIYY 23++ IHYH +0+2 HYHH 2++1 IYHZ +30+ YYYH +30+ IHYI ++01 HXHH ++01 XXXX +03+ IHYY 1++2",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140301000000006"
+},
+{
+"layers": "ZIZH 2++1 HHXY 2++1 IYHH +03+ ZIII 1++2 XXZZ +2+0 ZIYX 1+3+ IYXX ++01 YHYX 32++ HYYH ++10 IHHI +0+2",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140301000000007"
+},
+{
+"layers": "YYII +0+2 IYXI 32++ YZXY 32++ YYXZ 1++2 YZXZ +2+0 HZHH +30+ YZHY ++10 IZHY +2+0 IXYX +0+2 XXYX +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0
+]
+],
+"seed": "18446140301000000008"
+},
+{
+"layers": "XXIZ +2+0 YYXI 3+1+ IYII 23++ HZIH 1++2 ZHZX 1+3+ YIZI 3+1+ XHHZ +0+2 YYHI +2+0 ZHHH +0+2 HYIZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140301000000009"
+},
+{
+"layers": "HZZY 32++ ZYYH 1++2 HXYZ ++01 IXZY +2+0 XIHX +30+ XHII +2+0 HIHY +30+ YYZH 32++ ZHXZ 2++1 XZYI 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0,
+3
+]
+],
+"seed": "18446140301000000010"
+},
+{
+"layers": "XXHZ ++01 IIHI 3+1+ IYZH +0+2 HYYI 1++2 XHXY 1+3+ YZXI 2++1 HYXX 1+3+ IHXY 2++1 XYYX 1++2 XZHY 1+3+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140301000000011"
+},
+{
+"layers": "IZXI +0+2 HIZZ +30+ ZYIZ ++01 YYXZ 23++ IXIZ 3+1+ XIXZ +03+ ZXHH 3+1+ YYYX +30+ HYXZ +03+ HXYZ 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140301000000012"
+},
+{
+"layers": "XYYY +2+0 YIIH +30+ HIYI 32++ IZHX +03+ HYHZ 2++1 YHYX 2++1 XIXX 32++ YZIX 23++ IIZI +30+ ZHYY +03+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140301000000013"
+},
+{
+"layers": "XYHX +2+0 IHIX ++01 XHIH 32++ ZIIX 1+3+ YIIY ++01 XZXZ ++01 YYXI 32++ XZZX +0+2 XXIZ ++01 YHIH 1++2",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140301000000014"
+},
+{
+"layers": "ZZZZ +0+2 ZYIX +2+0 IIZZ 32++ IYHI +0+2 XIIZ 23++ IYHY ++01 HIIZ +30+ XXHY 32++ XIYI 23++ IIYH ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140301000000015"
+},
+{
+"layers": "ZXHI 3+1+ HIIH 23++ XHZY +03+ ZIXH +30+ IIHY 2++1 ZXIY 23++ HYHX 23++ IIIZ 23++ XXZY +0+2 HYZY 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140301000000016"
+},
+{
+"layers": "HYZZ 23++ IZYH ++01 XZHH ++10 YYXX 2++1 XYYI +03+ YYHZ 1++2 HXZY 1+3+ HIHX 23++ ZIHX 3+1+ ZHXX 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140301000000017"
+},
+{
+"layers": "IXIH 23++ YHIH ++10 IHYI 32++ IXIX 3+1+ HYHI 1++2 IHZH +0+2 IHHY +2+0 IIII +03+ HHIY 1++2 ZIZZ 2++1",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+]
+],
+"seed": "18446140301000000018"
+},
+{
+"layers": "YHYY 2++1 YYXZ +0+2 XYIZ ++01 YIYH 1+3+ ZXHY 1++2 XYYI ++10 HXXZ 1+3+ ZXXI 3+1+ HIYY 1++2 HXIZ 32++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140301000000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D1_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 1,
+"L": 2,
+"K": 4,
+"shots": 33000,
+"mle_shots": 33000,
+"bplomr_shots": 2400,
+"seeds": [
+"18446140500100000000",
+"18446140500100000020"
+],
+"circuits": [
+{
+"layers": "ZZXI 32++",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0
+]
+],
+"seed": "18446140500100000000"
+},
+{
+"layers": "IXII ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140500100000001"
+},
+{
+"layers": "YHHX 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500100000002"
+},
+{
+"layers": "IXYH 1++2",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500100000003"
+},
+{
+"layers": "IXZY ++10",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+0
+]
+],
+"seed": "18446140500100000004"
+},
+{
+"layers": "YIXH +2+0",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500100000005"
+},
+{
+"layers": "ZXIZ 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140500100000006"
+},
+{
+"layers": "YHII +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500100000007"
+},
+{
+"layers": "YHHI 23++",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+1
+]
+],
+"seed": "18446140500100000008"
+},
+{
+"layers": "HXII +2+0",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+0,
+3
+]
+],
+"seed": "18446140500100000009"
+},
+{
+"layers": "XIZX +03+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+0
+]
+],
+"seed": "18446140500100000010"
+},
+{
+"layers": "YYHY 1++2",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500100000011"
+},
+{
+"layers": "ZHIH 1++2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140500100000012"
+},
+{
+"layers": "IZYH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+3
+]
+],
+"seed": "18446140500100000013"
+},
+{
+"layers": "HXZH +2+0",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140500100000014"
+},
+{
+"layers": "XXZI 2++1",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500100000015"
+},
+{
+"layers": "XIZH ++01",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500100000016"
+},
+{
+"layers": "ZIHH 1++2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500100000017"
+},
+{
+"layers": "IYXH +0+2",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500100000018"
+},
+{
+"layers": "IHYZ 32++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140500100000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D2_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 2,
+"L": 4,
+"K": 4,
+"shots": 13000,
+"mle_shots": 13000,
+"bplomr_shots": 430,
+"seeds": [
+"18446140500200000000",
+"18446140500200000020"
+],
+"circuits": [
+{
+"layers": "XHIH +03+ YXIH 23++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500200000000"
+},
+{
+"layers": "ZXHY ++01 IXXZ +03+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500200000001"
+},
+{
+"layers": "IYZY ++01 HXIX 23++",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500200000002"
+},
+{
+"layers": "ZHII +0+2 IXXZ 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140500200000003"
+},
+{
+"layers": "HZZX +0+2 IYYZ 3+1+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500200000004"
+},
+{
+"layers": "XYHH +30+ YHYX +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500200000005"
+},
+{
+"layers": "IIHY 32++ IYII +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140500200000006"
+},
+{
+"layers": "IYXZ 32++ ZHYH 1+3+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500200000007"
+},
+{
+"layers": "XZYI +30+ HYZX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+]
+],
+"seed": "18446140500200000008"
+},
+{
+"layers": "XXHY +03+ IZXY +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2,
+3
+]
+],
+"seed": "18446140500200000009"
+},
+{
+"layers": "XXXH ++10 XIZI ++01",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500200000010"
+},
+{
+"layers": "XHZX ++10 IIZH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500200000011"
+},
+{
+"layers": "HZZI 1++2 HIIY 2++1",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500200000012"
+},
+{
+"layers": "HXXZ +0+2 XHZY +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140500200000013"
+},
+{
+"layers": "XYZX 3+1+ YHII 3+1+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140500200000014"
+},
+{
+"layers": "XHXI ++10 XXYZ ++01",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500200000015"
+},
+{
+"layers": "HZXY ++10 YXZX 1++2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500200000016"
+},
+{
+"layers": "XZHZ 2++1 HYYI ++01",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140500200000017"
+},
+{
+"layers": "HIHY 1++2 XXXX +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140500200000018"
+},
+{
+"layers": "YZXX 32++ ZYYY ++10",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+0
+]
+],
+"seed": "18446140500200000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D3_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 3,
+"L": 6,
+"K": 4,
+"shots": 7600,
+"mle_shots": 7600,
+"bplomr_shots": 230,
+"seeds": [
+"18446140500300000000",
+"18446140500300000020"
+],
+"circuits": [
+{
+"layers": "YZIX 1+3+ YYXX +0+2 XXHZ 1++2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+2,
+3
+]
+],
+"seed": "18446140500300000000"
+},
+{
+"layers": "XHZH 1++2 YHIY +0+2 IYZH ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140500300000001"
+},
+{
+"layers": "YHYH 2++1 XYZX 2++1 ZZYI +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500300000002"
+},
+{
+"layers": "YYXZ 2++1 IHZX 2++1 ZXXZ ++01",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500300000003"
+},
+{
+"layers": "XIXH ++01 ZXXI ++10 ZIYH 32++",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500300000004"
+},
+{
+"layers": "XIIX +2+0 IZXY 1++2 XYXI 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+3
+]
+],
+"seed": "18446140500300000005"
+},
+{
+"layers": "IZYH +0+2 XHZX ++01 IHHX 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140500300000006"
+},
+{
+"layers": "YZIZ 2++1 YXZX 2++1 XYHZ 3+1+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500300000007"
+},
+{
+"layers": "ZIIX ++01 YHHX 2++1 XXZI 23++",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500300000008"
+},
+{
+"layers": "ZZIZ 23++ HZII +2+0 ZYZH 23++",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140500300000009"
+},
+{
+"layers": "ZXYZ +2+0 ZHIY ++10 IZYZ ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500300000010"
+},
+{
+"layers": "IHHZ 1++2 XHYY +2+0 YZXH 32++",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2,
+3
+]
+],
+"seed": "18446140500300000011"
+},
+{
+"layers": "YXZI 1++2 HYXI +0+2 ZXYH +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500300000012"
+},
+{
+"layers": "HXYH 23++ HZZH 23++ ZZXY 3+1+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140500300000013"
+},
+{
+"layers": "YZHY +03+ XXXI +2+0 IYXZ ++10",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500300000014"
+},
+{
+"layers": "IYXY 1+3+ ZXYY +30+ IXHX 1++2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+]
+],
+"seed": "18446140500300000015"
+},
+{
+"layers": "XIZH +0+2 ZXXY 32++ IHZI ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140500300000016"
+},
+{
+"layers": "HIHY +03+ YYZH +30+ YZHH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140500300000017"
+},
+{
+"layers": "YHXH +2+0 ZXIX ++10 HXYX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500300000018"
+},
+{
+"layers": "IXZH 1+3+ IXIX 23++ YIIX 1++2",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140500300000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D4_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 4,
+"L": 8,
+"K": 4,
+"shots": 4700,
+"mle_shots": 4700,
+"bplomr_shots": 130,
+"seeds": [
+"18446140500400000000",
+"18446140500400000020"
+],
+"circuits": [
+{
+"layers": "ZIXX 23++ ZZYZ ++10 HZYX 1++2 HYYX 2++1",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500400000000"
+},
+{
+"layers": "HXZH 23++ XYIH +03+ ZIZY +2+0 ZYZI +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140500400000001"
+},
+{
+"layers": "IZZI ++01 IYZI +0+2 HZYH +30+ ZZIH 23++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500400000002"
+},
+{
+"layers": "ZYHI +0+2 YXYY 2++1 HXXZ 1+3+ IXXY 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140500400000003"
+},
+{
+"layers": "YHXH 3+1+ YYYI 1++2 IIXI 1+3+ YXXY 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500400000004"
+},
+{
+"layers": "IYXY 32++ IXIZ 1+3+ IHYX 1++2 YXXH 2++1",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140500400000005"
+},
+{
+"layers": "XZXH ++10 YIXX ++10 IYYH 1+3+ YIYZ +30+",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500400000006"
+},
+{
+"layers": "HYZZ +0+2 IYYY +30+ ZIIZ +03+ HXZI ++01",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140500400000007"
+},
+{
+"layers": "XZII ++10 XXHH 2++1 XHXI +0+2 ZXZH ++10",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140500400000008"
+},
+{
+"layers": "HZII +0+2 XIYX +03+ YXHZ 3+1+ HXZY +30+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500400000009"
+},
+{
+"layers": "YZYX ++10 YXIH 3+1+ YZXX +2+0 YIHI 23++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500400000010"
+},
+{
+"layers": "HIZI +03+ HXZI 1+3+ YZZZ ++01 YZXX ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140500400000011"
+},
+{
+"layers": "XZXZ ++10 IZXZ +30+ HHXI +2+0 YHHX +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500400000012"
+},
+{
+"layers": "YZHZ 3+1+ YZXH +30+ HXYY 2++1 IYZI +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500400000013"
+},
+{
+"layers": "IZZZ 1++2 YIYH 32++ YYYH +0+2 HYZH +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500400000014"
+},
+{
+"layers": "HHZX +2+0 XIZZ +03+ IYII ++01 ZXZH 32++",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500400000015"
+},
+{
+"layers": "YHXY ++10 YYYZ 2++1 HIHY 2++1 XYYH +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500400000016"
+},
+{
+"layers": "HHXZ 23++ IIZY 32++ XHXI 3+1+ YIZX +2+0",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+0,
+3
+]
+],
+"seed": "18446140500400000017"
+},
+{
+"layers": "IXII +30+ XIHH ++10 XYXY +03+ YZHY 23++",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500400000018"
+},
+{
+"layers": "HIZX 23++ YIXZ +2+0 YYYH 1++2 HYXI 3+1+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140500400000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D5_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 5,
+"L": 10,
+"K": 4,
+"shots": 4600,
+"mle_shots": 4600,
+"bplomr_shots": 190,
+"seeds": [
+"18446140500500000000",
+"18446140500500000020"
+],
+"circuits": [
+{
+"layers": "ZZZX +03+ XHZH 3+1+ YXZZ 1+3+ XHHZ +2+0 HHIZ 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140500500000000"
+},
+{
+"layers": "XHZY +30+ IYZH 32++ HIZY 1+3+ YHXI +30+ ZHHZ 1+3+",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140500500000001"
+},
+{
+"layers": "YIYY +30+ YZHZ +30+ ZHHY +2+0 XIXX +03+ IXIX 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140500500000002"
+},
+{
+"layers": "HIYZ +0+2 XZHZ 23++ ZZIH +0+2 YYHH 23++ HXYH ++01",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140500500000003"
+},
+{
+"layers": "ZIHX +2+0 XIHI 2++1 IYIH +03+ YYZH +0+2 XIIZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140500500000004"
+},
+{
+"layers": "XXIY +0+2 HIZX 23++ HZIZ 23++ XXXH 1+3+ ZHYX +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2,
+3
+]
+],
+"seed": "18446140500500000005"
+},
+{
+"layers": "YXXI 23++ YIYX +0+2 XYYY 32++ ZIHX 3+1+ XIZZ +30+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+2
+]
+],
+"seed": "18446140500500000006"
+},
+{
+"layers": "XZHZ 32++ IYIZ 2++1 IHIZ 3+1+ XHXH ++10 YXXI 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140500500000007"
+},
+{
+"layers": "YZYI 1+3+ HZYY 3+1+ IYZI 1+3+ IHIX 2++1 HYII 32++",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140500500000008"
+},
+{
+"layers": "YYZZ 1+3+ YHIZ 1+3+ XYHH 23++ IIZX +0+2 YXZY ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500500000009"
+},
+{
+"layers": "XIZY ++10 XHIZ 2++1 YIIX 3+1+ YZIH +03+ YYZH +03+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140500500000010"
+},
+{
+"layers": "ZXYY +03+ IXYY ++10 HHHH +2+0 HZZZ +30+ XZYH ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500500000011"
+},
+{
+"layers": "XYXI +30+ YHYY 23++ YHYY 2++1 IHYY ++10 IXYY +03+",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140500500000012"
+},
+{
+"layers": "IHXH ++01 ZYXZ 32++ YZYH ++10 IHXH 3+1+ YYZY +03+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500500000013"
+},
+{
+"layers": "HXYX 32++ YXXY +0+2 XHHH +2+0 HXHH ++01 HZHI +2+0",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500500000014"
+},
+{
+"layers": "HHXY 1+3+ YHZZ 3+1+ ZIHX 2++1 YZZY +0+2 IYYI ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500500000015"
+},
+{
+"layers": "HHYI ++01 XXZY +30+ IYZX ++01 ZYZY 23++ YYZZ +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140500500000016"
+},
+{
+"layers": "ZHII 2++1 IHYH +30+ ZHHI 23++ HIHZ +0+2 XXHH ++01",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500500000017"
+},
+{
+"layers": "XYIZ +0+2 ZHXI 32++ ZXIZ 1++2 YXHH ++01 ZHYX 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+3
+]
+],
+"seed": "18446140500500000018"
+},
+{
+"layers": "ZXHZ +03+ XHIX 2++1 ZYYI 32++ IIZX +0+2 YHIY 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500500000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D6_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 6,
+"L": 12,
+"K": 4,
+"shots": 2500,
+"mle_shots": 2500,
+"bplomr_shots": 93,
+"seeds": [
+"18446140500600000000",
+"18446140500600000020"
+],
+"circuits": [
+{
+"layers": "YZZI 32++ YYYI +30+ IYXZ +2+0 IIXZ 2++1 HZZI +0+2 YZYH +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500600000000"
+},
+{
+"layers": "ZZIY ++01 HHII 32++ ZYHY 1+3+ HHXY +0+2 XIYH +30+ XYYI 2++1",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500600000001"
+},
+{
+"layers": "XHYH ++01 HYIY +2+0 YZZX +30+ IIXY +03+ HIIX +2+0 ZHZZ +30+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140500600000002"
+},
+{
+"layers": "HZXH 2++1 YXXX +30+ XIIZ 32++ XHZZ ++10 XHIH 32++ IZIH 1+3+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500600000003"
+},
+{
+"layers": "XHII +2+0 XHIZ 23++ YIXI +03+ IHHH +30+ IIZZ 32++ ZXXX ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500600000004"
+},
+{
+"layers": "IIHH +03+ HYHH 1++2 ZYZX +03+ ZZYX 1++2 HIHZ +30+ HHHI ++10",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500600000005"
+},
+{
+"layers": "IHZH 1++2 YIII 3+1+ XHYY 3+1+ IXZI 3+1+ IHYH ++10 HHXY ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500600000006"
+},
+{
+"layers": "XIIH ++10 IYYZ ++10 YZZY 1++2 YXXH 23++ YZZI ++01 HHYZ +0+2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500600000007"
+},
+{
+"layers": "IYHX 32++ YYXI ++01 ZIXI 1+3+ IXHX 1+3+ IYIY +0+2 HYHX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140500600000008"
+},
+{
+"layers": "YXII 23++ ZHIY +0+2 ZZHH ++01 HZIH 1++2 IIHZ +2+0 YZXX +0+2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500600000009"
+},
+{
+"layers": "YHXI 3+1+ IYHZ ++10 IXXZ +03+ HIIH +2+0 YHIZ 3+1+ XZYY 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500600000010"
+},
+{
+"layers": "HXHZ ++01 YHXY 1+3+ XHIZ 2++1 IZXH +03+ HHII ++10 YXIY +03+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500600000011"
+},
+{
+"layers": "IHZZ ++01 YZZH 3+1+ HXXH 1+3+ XZZZ 2++1 XIZX +0+2 HXIY ++10",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500600000012"
+},
+{
+"layers": "IIYX 1++2 YXZY +2+0 XHHZ 3+1+ HXHX 1+3+ IZZX ++10 ZZZY ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500600000013"
+},
+{
+"layers": "IZYH 3+1+ IIZI +03+ IZIZ ++10 ZIXI +0+2 IZZY +30+ ZXXH +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500600000014"
+},
+{
+"layers": "ZXZY +0+2 XZXY 1++2 IHXH ++10 ZHHX 2++1 XZXH +2+0 XIXI +0+2",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140500600000015"
+},
+{
+"layers": "XYHY +2+0 XXIX +0+2 YIIZ 1++2 HXZI +03+ ZXHY 32++ YHXY +0+2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140500600000016"
+},
+{
+"layers": "ZIIY +0+2 IYHY 1+3+ ZHHX ++10 HIZH +0+2 XZYH 23++ XHII +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140500600000017"
+},
+{
+"layers": "YYIZ 2++1 HHYY +0+2 IXHI ++10 YIYX 32++ YYHI 3+1+ IHXZ +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500600000018"
+},
+{
+"layers": "HIHH ++10 XYXZ +30+ XZYY +2+0 ZIIZ 1+3+ YHZH 1+3+ HHXI +0+2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140500600000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D7_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 7,
+"L": 14,
+"K": 4,
+"shots": 3000,
+"mle_shots": 3000,
+"bplomr_shots": 97,
+"seeds": [
+"18446140500700000000",
+"18446140500700000020"
+],
+"circuits": [
+{
+"layers": "YHIX +30+ ZXXX 23++ HHIZ +0+2 ZZXY 3+1+ YYIX 1+3+ YYYI 1++2 XXYY 1++2",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140500700000000"
+},
+{
+"layers": "IYIZ 1++2 HHHZ 3+1+ HXXX ++10 IZHY 2++1 IIHY 2++1 ZZXY 1+3+ IHZH ++10",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+3
+]
+],
+"seed": "18446140500700000001"
+},
+{
+"layers": "IHIX 2++1 XYHI 2++1 HYZZ +30+ HIZH 3+1+ YXHY 3+1+ ZYII 3+1+ XHHI +0+2",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140500700000002"
+},
+{
+"layers": "ZYII +0+2 XHHY +2+0 XHXX 3+1+ ZIHI 32++ YXIY +2+0 XYYH 3+1+ XYXH 32++",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500700000003"
+},
+{
+"layers": "IXIX 1++2 IYHZ ++01 XYYI 3+1+ XYZY +0+2 YZIZ +03+ ZYZI 1+3+ ZHIY 3+1+",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500700000004"
+},
+{
+"layers": "YHHH 2++1 ZHHZ 32++ HZII 3+1+ XHXX 23++ XHIX +30+ ZIHZ 3+1+ IIHZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1,
+2
+]
+],
+"seed": "18446140500700000005"
+},
+{
+"layers": "YZII 23++ ZYHX 1+3+ ZXII 1++2 ZZYX ++10 IHHX ++01 HZXH 1++2 IYYI 1+3+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140500700000006"
+},
+{
+"layers": "XIHY +2+0 IIXY +0+2 HYHH 2++1 YHXX 1++2 YZYH 1+3+ IIZY 23++ XZHI +0+2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500700000007"
+},
+{
+"layers": "IIZH 1+3+ YXYI 2++1 YIZX ++01 IHYZ +0+2 YXHI +2+0 IHZI 23++ XHIY 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500700000008"
+},
+{
+"layers": "XIYH 2++1 YZZZ 2++1 IXZZ 1+3+ YYZH 3+1+ ZIHY +2+0 YXXH 2++1 XXIH 2++1",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500700000009"
+},
+{
+"layers": "YZII +03+ HIXX +2+0 XZYY +03+ XIZZ 3+1+ IYIX 3+1+ XIHH +0+2 ZXYX +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+1,
+3
+]
+],
+"seed": "18446140500700000010"
+},
+{
+"layers": "HYXI 1+3+ YXHH +30+ YIXX 3+1+ YYHY +03+ IZHY 1++2 IYHI 1+3+ YYHX +0+2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+0
+],
+[
+1,
+3
+]
+],
+"seed": "18446140500700000011"
+},
+{
+"layers": "XZHX +0+2 XYYX 1+3+ HZZI ++10 ZHYH 1++2 YZXH 3+1+ XHIX 1++2 ZYYI ++10",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0
+]
+],
+"seed": "18446140500700000012"
+},
+{
+"layers": "YXXX 3+1+ XXHI +0+2 ZYZH 1++2 HHHZ 3+1+ XYHH ++10 XZIZ 32++ YYHX ++01",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500700000013"
+},
+{
+"layers": "IHXX 1++2 XYZX +03+ ZZYY ++01 XYIZ ++10 YYXX ++10 ZZIY ++01 XYXI 2++1",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500700000014"
+},
+{
+"layers": "IHIH +30+ IHHH ++10 IXXY +0+2 HZXY +2+0 YHXI +2+0 XYYX 3+1+ IZZI 23++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500700000015"
+},
+{
+"layers": "YIXZ 23++ HIYH +2+0 XXHI 23++ IHYH 32++ HIYY +2+0 IIYY +2+0 XZHZ ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500700000016"
+},
+{
+"layers": "YYIX 32++ ZIIH 1+3+ XZZY +2+0 XHZX 23++ HZIZ +30+ XHHY +0+2 YHXH 32++",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140500700000017"
+},
+{
+"layers": "IZYI +2+0 ZIHX 2++1 ZXHZ +30+ ZXIH ++10 YHZH +2+0 YYIH 23++ YIZZ +2+0",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500700000018"
+},
+{
+"layers": "XXZZ ++10 IZYX 32++ IIZH 32++ HYYX ++10 ZHHX +30+ HIZH +2+0 ZHHZ ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140500700000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D8_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 8,
+"L": 16,
+"K": 4,
+"shots": 2100,
+"mle_shots": 2100,
+"bplomr_shots": 92,
+"seeds": [
+"18446140500800000000",
+"18446140500800000020"
+],
+"circuits": [
+{
+"layers": "XYIH ++10 IIYI +2+0 ZYYZ ++01 HHYI 1+3+ ZHZX 32++ ZZXI 1++2 IHXX +2+0 XHIY +2+0",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500800000000"
+},
+{
+"layers": "XZYY +0+2 ZIZZ 1+3+ IHZX 3+1+ IIXI 1+3+ IXZX +2+0 XYII 1++2 ZXHX ++01 ZIII 2++1",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140500800000001"
+},
+{
+"layers": "HYYH ++10 HXIH 32++ YIYY 32++ ZIYZ 1++2 YIHZ +2+0 YHIY 1++2 HYIY 32++ IHXH 32++",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140500800000002"
+},
+{
+"layers": "ZZXY 32++ YXIZ 1++2 IIXH ++10 HXYZ 32++ HIIX 1+3+ YHXZ +03+ HIHH ++10 IIXZ 3+1+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140500800000003"
+},
+{
+"layers": "ZZHY ++01 ZYYZ +30+ IXZZ +0+2 YYHY 3+1+ HXYY 2++1 HHZI 32++ ZYHH +30+ XYXX 2++1",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500800000004"
+},
+{
+"layers": "XHYI 1+3+ YHXZ +0+2 XXHX 23++ IHIZ 1++2 ZYYX ++01 ZXIH 1++2 YZXY 1++2 YXXY 23++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+2
+]
+],
+"seed": "18446140500800000005"
+},
+{
+"layers": "ZIYH 32++ HHYZ 2++1 IZII +2+0 YZYH +0+2 XHZZ 2++1 IXXZ +03+ HIZZ +03+ YXIZ 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500800000006"
+},
+{
+"layers": "HHYY 1+3+ XIYY 2++1 XYZZ 1++2 ZZHY +30+ YZIX 3+1+ YIHZ 3+1+ XHXH 2++1 YYZZ 1++2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140500800000007"
+},
+{
+"layers": "XXXI +03+ ZYYX 1++2 HIZX 2++1 YYIH +30+ IHHI +0+2 HXHZ ++10 YHXX 3+1+ ZIHX +03+",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140500800000008"
+},
+{
+"layers": "YHIZ +03+ ZZYI ++01 IZXZ 2++1 ZXHI ++10 YXXY +30+ HYIY +30+ ZIXH +0+2 YZIX 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140500800000009"
+},
+{
+"layers": "IHHX ++01 XXIX 1++2 IIZI 3+1+ ZIII ++01 ZZIY ++01 ZHHH +0+2 IIYX +2+0 ZXYY +0+2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140500800000010"
+},
+{
+"layers": "XIHI 3+1+ YZZZ 3+1+ IZIH 1+3+ IXYZ 23++ ZYXX 2++1 YXHZ +03+ HXZH 2++1 YXZZ +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140500800000011"
+},
+{
+"layers": "YYYY +03+ YZXH +0+2 XXHY 2++1 ZIYZ +0+2 HHHY +30+ IHHY +30+ ZYHX +0+2 HYIX 3+1+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140500800000012"
+},
+{
+"layers": "IZZI +03+ HHIZ 1+3+ YXXZ +2+0 ZXYX 1+3+ XZHH 23++ ZHXZ ++01 HYIY ++01 ZHZY ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140500800000013"
+},
+{
+"layers": "IYIY +2+0 IIIH 1++2 HIHZ +2+0 ZHYH ++01 ZHZX +0+2 XZXH ++01 YZIY +03+ HYIH +2+0",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500800000014"
+},
+{
+"layers": "IZIX ++01 HXXI ++01 HXIZ 23++ HIZX 32++ HZHY +03+ HIII +30+ HZXY ++10 YIYX 3+1+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140500800000015"
+},
+{
+"layers": "XHYH +0+2 XXHZ +30+ XHXX +03+ IHHH ++01 HHHX +0+2 YZYY +03+ IZZI +2+0 YYXX 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140500800000016"
+},
+{
+"layers": "HXXH ++10 IYIZ 1+3+ YZXY 1++2 IZXZ +2+0 ZZZX 1+3+ IYXZ +03+ IHXY +03+ YHYX ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500800000017"
+},
+{
+"layers": "YHXI +2+0 XXHI ++01 IZXX +0+2 YXHY +03+ IXYY 1++2 YHHH 23++ YXZH 23++ YIIY +30+",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+]
+],
+"seed": "18446140500800000018"
+},
+{
+"layers": "HYZI +30+ XZYI 1++2 ZIZI +0+2 HYIX 2++1 HXIZ 23++ YIII 1+3+ ZZIH 1+3+ YYYH 1+3+",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500800000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D9_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 9,
+"L": 18,
+"K": 4,
+"shots": 1100,
+"mle_shots": 1100,
+"bplomr_shots": 52,
+"seeds": [
+"18446140500900000000",
+"18446140500900000020"
+],
+"circuits": [
+{
+"layers": "HZZH ++10 HYZH +2+0 HHHX 1+3+ XHHH 2++1 ZIIX ++01 YYZI +0+2 HZZZ +30+ IXIH +2+0 XYIX +0+2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140500900000000"
+},
+{
+"layers": "ZIHZ 3+1+ HZHZ 32++ YIIZ +03+ YHIX 23++ HYIH 3+1+ IYYH 2++1 XHHX +2+0 IYXI 2++1 IHZX +30+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140500900000001"
+},
+{
+"layers": "ZHII 23++ ZIYX 1++2 ZHHI 2++1 HIYY 1++2 HZYX +03+ HIYI 32++ YZXH +03+ ZHIH ++10 HZXH 23++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500900000002"
+},
+{
+"layers": "YZIZ ++01 HXIX +0+2 XXHX +2+0 IIIH ++01 ZHZI ++01 XHIX +2+0 XHZH 2++1 IHIZ 1+3+ YHII +0+2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1,
+2
+]
+],
+"seed": "18446140500900000003"
+},
+{
+"layers": "HYIZ +0+2 HHXX +30+ XHHY 3+1+ YHZX 2++1 HXIZ +03+ XYYX 2++1 ZHYH 1++2 HXXY 23++ IXXX 2++1",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140500900000004"
+},
+{
+"layers": "ZHYZ +30+ YYXZ 1++2 IXXH +03+ XYII 1+3+ ZXXX ++01 HXYZ 2++1 IHXX +0+2 IXYI 1++2 YZHH +30+",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140500900000005"
+},
+{
+"layers": "IIXX +30+ ZXYH +2+0 HYHX 1+3+ ZXII 23++ HIXY 23++ YYYI ++10 XIHY ++10 YXIX ++10 HYXZ 32++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500900000006"
+},
+{
+"layers": "YZXH 3+1+ HXHZ 32++ YXXY 3+1+ ZXIY 2++1 HZZY 23++ IXHX 32++ HIZY ++10 IXIH 1+3+ YYXY +0+2",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500900000007"
+},
+{
+"layers": "XYYY 2++1 ZHXX 23++ XYII ++01 ZHYH +30+ XZYY +2+0 ZXYY +0+2 HIIH 1++2 YIIX 2++1 HYHY 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140500900000008"
+},
+{
+"layers": "ZYIZ ++10 YIZX 2++1 IXHI ++10 ZXZI 3+1+ YZZZ +0+2 IHHY 1+3+ ZIYZ 1+3+ XYIZ +0+2 XYYI 23++",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140500900000009"
+},
+{
+"layers": "HXHX ++10 IHYH 3+1+ IZHZ 1+3+ IIIY 2++1 XYII +03+ XZIX ++01 YZII 2++1 ZIXH ++10 HZXI ++01",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140500900000010"
+},
+{
+"layers": "YHYY 1+3+ HHXZ 2++1 ZHZH 32++ IXHZ 1+3+ IYIY 32++ IZHY 1+3+ ZYXX +0+2 HZHH 3+1+ HXYH 2++1",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140500900000011"
+},
+{
+"layers": "ZXYZ 32++ IHHZ +03+ IHXX +30+ YZZX ++01 HZXY 3+1+ ZXIH +2+0 IHIX 3+1+ IXZI 1++2 XYYY 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140500900000012"
+},
+{
+"layers": "IHHY +03+ HYHI 32++ XHIH ++10 YYZZ +2+0 XIHY 1++2 HZYX 3+1+ ZZXX ++01 HXYH +2+0 YHZX 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140500900000013"
+},
+{
+"layers": "ZHHZ ++01 IIYI 2++1 XXII ++01 IIXY ++10 ZYXY 1++2 YZHZ +0+2 IZHI +0+2 HHZX +30+ YXZX 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140500900000014"
+},
+{
+"layers": "XHIX 23++ HIYH 1+3+ IZYZ 23++ XZXY 23++ ZYHY 23++ YZIX +0+2 IIHZ ++10 YXXY +03+ XHIY +03+",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500900000015"
+},
+{
+"layers": "XZHY +0+2 HXXZ +0+2 ZIXZ ++01 XXYZ +30+ ZIZI 1++2 YIZI +03+ HYHY ++10 ZZIH +30+ YHXH 23++",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140500900000016"
+},
+{
+"layers": "XHHY +0+2 IHXH 23++ IIIX ++01 IIXZ ++01 IZYZ 32++ YIXY 32++ IXXZ ++01 XZYX 32++ IIYZ +30+",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140500900000017"
+},
+{
+"layers": "IHYZ ++10 HZHZ 32++ XZXZ 3+1+ YYZI 3+1+ IIXI 1++2 YHZY +0+2 ZYHH 2++1 XHIH 3+1+ HYZZ 3+1+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140500900000018"
+},
+{
+"layers": "YHXH 1++2 ZZZZ 3+1+ YYYH 23++ HIIY ++10 YYZX 3+1+ ZYHH ++10 IYZI 2++1 ZXHY 1+3+ HZHI ++10",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140500900000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D10_d5_lukin_p3",
+"family": "lukin",
+"d": 5,
+"noise": "lukin",
+"p": 0.003,
+"depth": 10,
+"L": 20,
+"K": 4,
+"shots": 1600,
+"mle_shots": 1600,
+"bplomr_shots": 93,
+"seeds": [
+"18446140501000000000",
+"18446140501000000020"
+],
+"circuits": [
+{
+"layers": "HIZZ ++10 IYHZ 2++1 XXHX +30+ HIYY 32++ YIZI 32++ ZXYZ 1++2 HYZI 3+1+ YXXY 23++ YHZI 23++ ZIHX ++10",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140501000000000"
+},
+{
+"layers": "ZXZX 32++ HXXY 1+3+ XZXI +30+ IYYX 1+3+ YHXZ ++01 YIII 3+1+ YXYY 23++ IZIX 32++ ZXXZ 1+3+ YIIX 1+3+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140501000000001"
+},
+{
+"layers": "IYYZ 2++1 HZZX +30+ HIXI 32++ YXHY 32++ IYYI 2++1 YYXZ 1+3+ ZHII 23++ ZZIY 1++2 XIXX +2+0 HZXY 1++2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140501000000002"
+},
+{
+"layers": "IXZX +2+0 YYHX ++01 ZYYZ 32++ IYXX 3+1+ ZZII ++10 HIZH 3+1+ XZYI +30+ HZZI 1+3+ YHXX 1++2 YHHI 32++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140501000000003"
+},
+{
+"layers": "ZXYY +03+ XYIH +30+ HHYH 1+3+ YHXH 23++ ZHIY 1+3+ IHXI +03+ HXZZ 3+1+ XHHI +30+ YHYY +2+0 ZYXI ++10",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140501000000004"
+},
+{
+"layers": "IYIY ++01 HZYH 1++2 YIZY 1+3+ XYYX +0+2 YHXZ 1++2 IHIZ 3+1+ ZZIX 1+3+ ZZHI 3+1+ XIII 2++1 IHHH +03+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140501000000005"
+},
+{
+"layers": "HYHX 32++ ZIYY 23++ IHYH +0+2 HYHH 2++1 IYHZ +30+ YYYH +30+ IHYI ++01 HXHH ++01 XXXX +03+ IHYY 1++2",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140501000000006"
+},
+{
+"layers": "ZIZH 2++1 HHXY 2++1 IYHH +03+ ZIII 1++2 XXZZ +2+0 ZIYX 1+3+ IYXX ++01 YHYX 32++ HYYH ++10 IHHI +0+2",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140501000000007"
+},
+{
+"layers": "YYII +0+2 IYXI 32++ YZXY 32++ YYXZ 1++2 YZXZ +2+0 HZHH +30+ YZHY ++10 IZHY +2+0 IXYX +0+2 XXYX +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0
+]
+],
+"seed": "18446140501000000008"
+},
+{
+"layers": "XXIZ +2+0 YYXI 3+1+ IYII 23++ HZIH 1++2 ZHZX 1+3+ YIZI 3+1+ XHHZ +0+2 YYHI +2+0 ZHHH +0+2 HYIZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140501000000009"
+},
+{
+"layers": "HZZY 32++ ZYYH 1++2 HXYZ ++01 IXZY +2+0 XIHX +30+ XHII +2+0 HIHY +30+ YYZH 32++ ZHXZ 2++1 XZYI 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0,
+3
+]
+],
+"seed": "18446140501000000010"
+},
+{
+"layers": "XXHZ ++01 IIHI 3+1+ IYZH +0+2 HYYI 1++2 XHXY 1+3+ YZXI 2++1 HYXX 1+3+ IHXY 2++1 XYYX 1++2 XZHY 1+3+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140501000000011"
+},
+{
+"layers": "IZXI +0+2 HIZZ +30+ ZYIZ ++01 YYXZ 23++ IXIZ 3+1+ XIXZ +03+ ZXHH 3+1+ YYYX +30+ HYXZ +03+ HXYZ 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140501000000012"
+},
+{
+"layers": "XYYY +2+0 YIIH +30+ HIYI 32++ IZHX +03+ HYHZ 2++1 YHYX 2++1 XIXX 32++ YZIX 23++ IIZI +30+ ZHYY +03+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140501000000013"
+},
+{
+"layers": "XYHX +2+0 IHIX ++01 XHIH 32++ ZIIX 1+3+ YIIY ++01 XZXZ ++01 YYXI 32++ XZZX +0+2 XXIZ ++01 YHIH 1++2",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140501000000014"
+},
+{
+"layers": "ZZZZ +0+2 ZYIX +2+0 IIZZ 32++ IYHI +0+2 XIIZ 23++ IYHY ++01 HIIZ +30+ XXHY 32++ XIYI 23++ IIYH ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140501000000015"
+},
+{
+"layers": "ZXHI 3+1+ HIIH 23++ XHZY +03+ ZIXH +30+ IIHY 2++1 ZXIY 23++ HYHX 23++ IIIZ 23++ XXZY +0+2 HYZY 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140501000000016"
+},
+{
+"layers": "HYZZ 23++ IZYH ++01 XZHH ++10 YYXX 2++1 XYYI +03+ YYHZ 1++2 HXZY 1+3+ HIHX 23++ ZIHX 3+1+ ZHXX 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140501000000017"
+},
+{
+"layers": "IXIH 23++ YHIH ++10 IHYI 32++ IXIX 3+1+ HYHI 1++2 IHZH +0+2 IHHY +2+0 IIII +03+ HHIY 1++2 ZIZZ 2++1",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+]
+],
+"seed": "18446140501000000018"
+},
+{
+"layers": "YHYY 2++1 YYXZ +0+2 XYIZ ++01 YIYH 1+3+ ZXHY 1++2 XYYI ++10 HXXZ 1+3+ ZXXI 3+1+ HIYY 1++2 HXIZ 32++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140501000000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D1_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 1,
+"L": 2,
+"K": 4,
+"shots": 530000,
+"mle_shots": 48964,
+"bplomr_shots": 14000,
+"seeds": [
+"18446140700100000000",
+"18446140700100000020"
+],
+"circuits": [
+{
+"layers": "ZZXI 32++",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0
+]
+],
+"seed": "18446140700100000000"
+},
+{
+"layers": "IXII ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140700100000001"
+},
+{
+"layers": "YHHX 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700100000002"
+},
+{
+"layers": "IXYH 1++2",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700100000003"
+},
+{
+"layers": "IXZY ++10",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+0
+]
+],
+"seed": "18446140700100000004"
+},
+{
+"layers": "YIXH +2+0",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700100000005"
+},
+{
+"layers": "ZXIZ 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140700100000006"
+},
+{
+"layers": "YHII +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700100000007"
+},
+{
+"layers": "YHHI 23++",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+1
+]
+],
+"seed": "18446140700100000008"
+},
+{
+"layers": "HXII +2+0",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+0,
+3
+]
+],
+"seed": "18446140700100000009"
+},
+{
+"layers": "XIZX +03+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+0
+]
+],
+"seed": "18446140700100000010"
+},
+{
+"layers": "YYHY 1++2",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700100000011"
+},
+{
+"layers": "ZHIH 1++2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140700100000012"
+},
+{
+"layers": "IZYH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+3
+]
+],
+"seed": "18446140700100000013"
+},
+{
+"layers": "HXZH +2+0",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140700100000014"
+},
+{
+"layers": "XXZI 2++1",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700100000015"
+},
+{
+"layers": "XIZH ++01",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700100000016"
+},
+{
+"layers": "ZIHH 1++2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700100000017"
+},
+{
+"layers": "IYXH +0+2",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700100000018"
+},
+{
+"layers": "IHYZ 32++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 1,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140700100000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D2_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 2,
+"L": 4,
+"K": 4,
+"shots": 86000,
+"mle_shots": 13114,
+"bplomr_shots": 2200,
+"seeds": [
+"18446140700200000000",
+"18446140700200000020"
+],
+"circuits": [
+{
+"layers": "XHIH +03+ YXIH 23++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700200000000"
+},
+{
+"layers": "ZXHY ++01 IXXZ +03+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700200000001"
+},
+{
+"layers": "IYZY ++01 HXIX 23++",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700200000002"
+},
+{
+"layers": "ZHII +0+2 IXXZ 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140700200000003"
+},
+{
+"layers": "HZZX +0+2 IYYZ 3+1+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700200000004"
+},
+{
+"layers": "XYHH +30+ YHYX +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700200000005"
+},
+{
+"layers": "IIHY 32++ IYII +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140700200000006"
+},
+{
+"layers": "IYXZ 32++ ZHYH 1+3+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700200000007"
+},
+{
+"layers": "XZYI +30+ HYZX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+]
+],
+"seed": "18446140700200000008"
+},
+{
+"layers": "XXHY +03+ IZXY +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2,
+3
+]
+],
+"seed": "18446140700200000009"
+},
+{
+"layers": "XXXH ++10 XIZI ++01",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700200000010"
+},
+{
+"layers": "XHZX ++10 IIZH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700200000011"
+},
+{
+"layers": "HZZI 1++2 HIIY 2++1",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700200000012"
+},
+{
+"layers": "HXXZ +0+2 XHZY +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140700200000013"
+},
+{
+"layers": "XYZX 3+1+ YHII 3+1+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140700200000014"
+},
+{
+"layers": "XHXI ++10 XXYZ ++01",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700200000015"
+},
+{
+"layers": "HZXY ++10 YXZX 1++2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700200000016"
+},
+{
+"layers": "XZHZ 2++1 HYYI ++01",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140700200000017"
+},
+{
+"layers": "HIHY 1++2 XXXX +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140700200000018"
+},
+{
+"layers": "YZXX 32++ ZYYY ++10",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 2,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+0
+]
+],
+"seed": "18446140700200000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D3_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 3,
+"L": 6,
+"K": 4,
+"shots": 55000,
+"mle_shots": 6794,
+"bplomr_shots": 1400,
+"seeds": [
+"18446140700300000000",
+"18446140700300000020"
+],
+"circuits": [
+{
+"layers": "YZIX 1+3+ YYXX +0+2 XXHZ 1++2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+2,
+3
+]
+],
+"seed": "18446140700300000000"
+},
+{
+"layers": "XHZH 1++2 YHIY +0+2 IYZH ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140700300000001"
+},
+{
+"layers": "YHYH 2++1 XYZX 2++1 ZZYI +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700300000002"
+},
+{
+"layers": "YYXZ 2++1 IHZX 2++1 ZXXZ ++01",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700300000003"
+},
+{
+"layers": "XIXH ++01 ZXXI ++10 ZIYH 32++",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700300000004"
+},
+{
+"layers": "XIIX +2+0 IZXY 1++2 XYXI 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+3
+]
+],
+"seed": "18446140700300000005"
+},
+{
+"layers": "IZYH +0+2 XHZX ++01 IHHX 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140700300000006"
+},
+{
+"layers": "YZIZ 2++1 YXZX 2++1 XYHZ 3+1+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700300000007"
+},
+{
+"layers": "ZIIX ++01 YHHX 2++1 XXZI 23++",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700300000008"
+},
+{
+"layers": "ZZIZ 23++ HZII +2+0 ZYZH 23++",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140700300000009"
+},
+{
+"layers": "ZXYZ +2+0 ZHIY ++10 IZYZ ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700300000010"
+},
+{
+"layers": "IHHZ 1++2 XHYY +2+0 YZXH 32++",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2,
+3
+]
+],
+"seed": "18446140700300000011"
+},
+{
+"layers": "YXZI 1++2 HYXI +0+2 ZXYH +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700300000012"
+},
+{
+"layers": "HXYH 23++ HZZH 23++ ZZXY 3+1+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140700300000013"
+},
+{
+"layers": "YZHY +03+ XXXI +2+0 IYXZ ++10",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700300000014"
+},
+{
+"layers": "IYXY 1+3+ ZXYY +30+ IXHX 1++2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+]
+],
+"seed": "18446140700300000015"
+},
+{
+"layers": "XIZH +0+2 ZXXY 32++ IHZI ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140700300000016"
+},
+{
+"layers": "HIHY +03+ YYZH +30+ YZHH 1++2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140700300000017"
+},
+{
+"layers": "YHXH +2+0 ZXIX ++10 HXYX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700300000018"
+},
+{
+"layers": "IXZH 1+3+ IXIX 23++ YIIX 1++2",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 3,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140700300000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D4_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 4,
+"L": 8,
+"K": 4,
+"shots": 46000,
+"mle_shots": 3978,
+"bplomr_shots": 1200,
+"seeds": [
+"18446140700400000000",
+"18446140700400000020"
+],
+"circuits": [
+{
+"layers": "ZIXX 23++ ZZYZ ++10 HZYX 1++2 HYYX 2++1",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700400000000"
+},
+{
+"layers": "HXZH 23++ XYIH +03+ ZIZY +2+0 ZYZI +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140700400000001"
+},
+{
+"layers": "IZZI ++01 IYZI +0+2 HZYH +30+ ZZIH 23++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700400000002"
+},
+{
+"layers": "ZYHI +0+2 YXYY 2++1 HXXZ 1+3+ IXXY 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140700400000003"
+},
+{
+"layers": "YHXH 3+1+ YYYI 1++2 IIXI 1+3+ YXXY 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700400000004"
+},
+{
+"layers": "IYXY 32++ IXIZ 1+3+ IHYX 1++2 YXXH 2++1",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140700400000005"
+},
+{
+"layers": "XZXH ++10 YIXX ++10 IYYH 1+3+ YIYZ +30+",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700400000006"
+},
+{
+"layers": "HYZZ +0+2 IYYY +30+ ZIIZ +03+ HXZI ++01",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140700400000007"
+},
+{
+"layers": "XZII ++10 XXHH 2++1 XHXI +0+2 ZXZH ++10",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140700400000008"
+},
+{
+"layers": "HZII +0+2 XIYX +03+ YXHZ 3+1+ HXZY +30+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700400000009"
+},
+{
+"layers": "YZYX ++10 YXIH 3+1+ YZXX +2+0 YIHI 23++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700400000010"
+},
+{
+"layers": "HIZI +03+ HXZI 1+3+ YZZZ ++01 YZXX ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140700400000011"
+},
+{
+"layers": "XZXZ ++10 IZXZ +30+ HHXI +2+0 YHHX +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700400000012"
+},
+{
+"layers": "YZHZ 3+1+ YZXH +30+ HXYY 2++1 IYZI +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700400000013"
+},
+{
+"layers": "IZZZ 1++2 YIYH 32++ YYYH +0+2 HYZH +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700400000014"
+},
+{
+"layers": "HHZX +2+0 XIZZ +03+ IYII ++01 ZXZH 32++",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700400000015"
+},
+{
+"layers": "YHXY ++10 YYYZ 2++1 HIHY 2++1 XYYH +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700400000016"
+},
+{
+"layers": "HHXZ 23++ IIZY 32++ XHXI 3+1+ YIZX +2+0",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+0,
+3
+]
+],
+"seed": "18446140700400000017"
+},
+{
+"layers": "IXII +30+ XIHH ++10 XYXY +03+ YZHY 23++",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700400000018"
+},
+{
+"layers": "HIZX 23++ YIXZ +2+0 YYYH 1++2 HYXI 3+1+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 4,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140700400000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D5_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 5,
+"L": 10,
+"K": 4,
+"shots": 37000,
+"mle_shots": 2769,
+"bplomr_shots": 940,
+"seeds": [
+"18446140700500000000",
+"18446140700500000020"
+],
+"circuits": [
+{
+"layers": "ZZZX +03+ XHZH 3+1+ YXZZ 1+3+ XHHZ +2+0 HHIZ 3+1+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140700500000000"
+},
+{
+"layers": "XHZY +30+ IYZH 32++ HIZY 1+3+ YHXI +30+ ZHHZ 1+3+",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140700500000001"
+},
+{
+"layers": "YIYY +30+ YZHZ +30+ ZHHY +2+0 XIXX +03+ IXIX 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140700500000002"
+},
+{
+"layers": "HIYZ +0+2 XZHZ 23++ ZZIH +0+2 YYHH 23++ HXYH ++01",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140700500000003"
+},
+{
+"layers": "ZIHX +2+0 XIHI 2++1 IYIH +03+ YYZH +0+2 XIIZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140700500000004"
+},
+{
+"layers": "XXIY +0+2 HIZX 23++ HZIZ 23++ XXXH 1+3+ ZHYX +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1
+],
+[
+2,
+3
+]
+],
+"seed": "18446140700500000005"
+},
+{
+"layers": "YXXI 23++ YIYX +0+2 XYYY 32++ ZIHX 3+1+ XIZZ +30+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+2
+]
+],
+"seed": "18446140700500000006"
+},
+{
+"layers": "XZHZ 32++ IYIZ 2++1 IHIZ 3+1+ XHXH ++10 YXXI 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140700500000007"
+},
+{
+"layers": "YZYI 1+3+ HZYY 3+1+ IYZI 1+3+ IHIX 2++1 HYII 32++",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+]
+],
+"seed": "18446140700500000008"
+},
+{
+"layers": "YYZZ 1+3+ YHIZ 1+3+ XYHH 23++ IIZX +0+2 YXZY ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700500000009"
+},
+{
+"layers": "XIZY ++10 XHIZ 2++1 YIIX 3+1+ YZIH +03+ YYZH +03+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140700500000010"
+},
+{
+"layers": "ZXYY +03+ IXYY ++10 HHHH +2+0 HZZZ +30+ XZYH ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700500000011"
+},
+{
+"layers": "XYXI +30+ YHYY 23++ YHYY 2++1 IHYY ++10 IXYY +03+",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140700500000012"
+},
+{
+"layers": "IHXH ++01 ZYXZ 32++ YZYH ++10 IHXH 3+1+ YYZY +03+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700500000013"
+},
+{
+"layers": "HXYX 32++ YXXY +0+2 XHHH +2+0 HXHH ++01 HZHI +2+0",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700500000014"
+},
+{
+"layers": "HHXY 1+3+ YHZZ 3+1+ ZIHX 2++1 YZZY +0+2 IYYI ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700500000015"
+},
+{
+"layers": "HHYI ++01 XXZY +30+ IYZX ++01 ZYZY 23++ YYZZ +30+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140700500000016"
+},
+{
+"layers": "ZHII 2++1 IHYH +30+ ZHHI 23++ HIHZ +0+2 XXHH ++01",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700500000017"
+},
+{
+"layers": "XYIZ +0+2 ZHXI 32++ ZXIZ 1++2 YXHH ++01 ZHYX 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+],
+[
+3
+]
+],
+"seed": "18446140700500000018"
+},
+{
+"layers": "ZXHZ +03+ XHIX 2++1 ZYYI 32++ IIZX +0+2 YHIY 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 5,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700500000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D6_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 6,
+"L": 12,
+"K": 4,
+"shots": 21000,
+"mle_shots": 2417,
+"bplomr_shots": 520,
+"seeds": [
+"18446140700600000000",
+"18446140700600000020"
+],
+"circuits": [
+{
+"layers": "YZZI 32++ YYYI +30+ IYXZ +2+0 IIXZ 2++1 HZZI +0+2 YZYH +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700600000000"
+},
+{
+"layers": "ZZIY ++01 HHII 32++ ZYHY 1+3+ HHXY +0+2 XIYH +30+ XYYI 2++1",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700600000001"
+},
+{
+"layers": "XHYH ++01 HYIY +2+0 YZZX +30+ IIXY +03+ HIIX +2+0 ZHZZ +30+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140700600000002"
+},
+{
+"layers": "HZXH 2++1 YXXX +30+ XIIZ 32++ XHZZ ++10 XHIH 32++ IZIH 1+3+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700600000003"
+},
+{
+"layers": "XHII +2+0 XHIZ 23++ YIXI +03+ IHHH +30+ IIZZ 32++ ZXXX ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700600000004"
+},
+{
+"layers": "IIHH +03+ HYHH 1++2 ZYZX +03+ ZZYX 1++2 HIHZ +30+ HHHI ++10",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700600000005"
+},
+{
+"layers": "IHZH 1++2 YIII 3+1+ XHYY 3+1+ IXZI 3+1+ IHYH ++10 HHXY ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700600000006"
+},
+{
+"layers": "XIIH ++10 IYYZ ++10 YZZY 1++2 YXXH 23++ YZZI ++01 HHYZ +0+2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700600000007"
+},
+{
+"layers": "IYHX 32++ YYXI ++01 ZIXI 1+3+ IXHX 1+3+ IYIY +0+2 HYHX ++01",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140700600000008"
+},
+{
+"layers": "YXII 23++ ZHIY +0+2 ZZHH ++01 HZIH 1++2 IIHZ +2+0 YZXX +0+2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700600000009"
+},
+{
+"layers": "YHXI 3+1+ IYHZ ++10 IXXZ +03+ HIIH +2+0 YHIZ 3+1+ XZYY 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700600000010"
+},
+{
+"layers": "HXHZ ++01 YHXY 1+3+ XHIZ 2++1 IZXH +03+ HHII ++10 YXIY +03+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700600000011"
+},
+{
+"layers": "IHZZ ++01 YZZH 3+1+ HXXH 1+3+ XZZZ 2++1 XIZX +0+2 HXIY ++10",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700600000012"
+},
+{
+"layers": "IIYX 1++2 YXZY +2+0 XHHZ 3+1+ HXHX 1+3+ IZZX ++10 ZZZY ++10",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700600000013"
+},
+{
+"layers": "IZYH 3+1+ IIZI +03+ IZIZ ++10 ZIXI +0+2 IZZY +30+ ZXXH +30+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700600000014"
+},
+{
+"layers": "ZXZY +0+2 XZXY 1++2 IHXH ++10 ZHHX 2++1 XZXH +2+0 XIXI +0+2",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140700600000015"
+},
+{
+"layers": "XYHY +2+0 XXIX +0+2 YIIZ 1++2 HXZI +03+ ZXHY 32++ YHXY +0+2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140700600000016"
+},
+{
+"layers": "ZIIY +0+2 IYHY 1+3+ ZHHX ++10 HIZH +0+2 XZYH 23++ XHII +30+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140700600000017"
+},
+{
+"layers": "YYIZ 2++1 HHYY +0+2 IXHI ++10 YIYX 32++ YYHI 3+1+ IHXZ +30+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700600000018"
+},
+{
+"layers": "HIHH ++10 XYXZ +30+ XZYY +2+0 ZIIZ 1+3+ YHZH 1+3+ HHXI +0+2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 6,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+1
+]
+],
+"seed": "18446140700600000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D7_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 7,
+"L": 14,
+"K": 4,
+"shots": 13000,
+"mle_shots": 1474,
+"bplomr_shots": 320,
+"seeds": [
+"18446140700700000000",
+"18446140700700000020"
+],
+"circuits": [
+{
+"layers": "YHIX +30+ ZXXX 23++ HHIZ +0+2 ZZXY 3+1+ YYIX 1+3+ YYYI 1++2 XXYY 1++2",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140700700000000"
+},
+{
+"layers": "IYIZ 1++2 HHHZ 3+1+ HXXX ++10 IZHY 2++1 IIHY 2++1 ZZXY 1+3+ IHZH ++10",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+3
+]
+],
+"seed": "18446140700700000001"
+},
+{
+"layers": "IHIX 2++1 XYHI 2++1 HYZZ +30+ HIZH 3+1+ YXHY 3+1+ ZYII 3+1+ XHHI +0+2",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+2
+]
+],
+"seed": "18446140700700000002"
+},
+{
+"layers": "ZYII +0+2 XHHY +2+0 XHXX 3+1+ ZIHI 32++ YXIY +2+0 XYYH 3+1+ XYXH 32++",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700700000003"
+},
+{
+"layers": "IXIX 1++2 IYHZ ++01 XYYI 3+1+ XYZY +0+2 YZIZ +03+ ZYZI 1+3+ ZHIY 3+1+",
+"prep": "XXXX",
+"meas": "XXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700700000004"
+},
+{
+"layers": "YHHH 2++1 ZHHZ 32++ HZII 3+1+ XHXX 23++ XHIX +30+ ZIHZ 3+1+ IIHZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1,
+2
+]
+],
+"seed": "18446140700700000005"
+},
+{
+"layers": "YZII 23++ ZYHX 1+3+ ZXII 1++2 ZZYX ++10 IHHX ++01 HZXH 1++2 IYYI 1+3+",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140700700000006"
+},
+{
+"layers": "XIHY +2+0 IIXY +0+2 HYHH 2++1 YHXX 1++2 YZYH 1+3+ IIZY 23++ XZHI +0+2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700700000007"
+},
+{
+"layers": "IIZH 1+3+ YXYI 2++1 YIZX ++01 IHYZ +0+2 YXHI +2+0 IHZI 23++ XHIY 2++1",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700700000008"
+},
+{
+"layers": "XIYH 2++1 YZZZ 2++1 IXZZ 1+3+ YYZH 3+1+ ZIHY +2+0 YXXH 2++1 XXIH 2++1",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700700000009"
+},
+{
+"layers": "YZII +03+ HIXX +2+0 XZYY +03+ XIZZ 3+1+ IYIX 3+1+ XIHH +0+2 ZXYX +0+2",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+1,
+3
+]
+],
+"seed": "18446140700700000010"
+},
+{
+"layers": "HYXI 1+3+ YXHH +30+ YIXX 3+1+ YYHY +03+ IZHY 1++2 IYHI 1+3+ YYHX +0+2",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+0
+],
+[
+1,
+3
+]
+],
+"seed": "18446140700700000011"
+},
+{
+"layers": "XZHX +0+2 XYYX 1+3+ HZZI ++10 ZHYH 1++2 YZXH 3+1+ XHIX 1++2 ZYYI ++10",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+3
+],
+[
+0
+]
+],
+"seed": "18446140700700000012"
+},
+{
+"layers": "YXXX 3+1+ XXHI +0+2 ZYZH 1++2 HHHZ 3+1+ XYHH ++10 XZIZ 32++ YYHX ++01",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700700000013"
+},
+{
+"layers": "IHXX 1++2 XYZX +03+ ZZYY ++01 XYIZ ++10 YYXX ++10 ZZIY ++01 XYXI 2++1",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700700000014"
+},
+{
+"layers": "IHIH +30+ IHHH ++10 IXXY +0+2 HZXY +2+0 YHXI +2+0 XYYX 3+1+ IZZI 23++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700700000015"
+},
+{
+"layers": "YIXZ 23++ HIYH +2+0 XXHI 23++ IHYH 32++ HIYY +2+0 IIYY +2+0 XZHZ ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700700000016"
+},
+{
+"layers": "YYIX 32++ ZIIH 1+3+ XZZY +2+0 XHZX 23++ HZIZ +30+ XHHY +0+2 YHXH 32++",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140700700000017"
+},
+{
+"layers": "IZYI +2+0 ZIHX 2++1 ZXHZ +30+ ZXIH ++10 YHZH +2+0 YYIH 23++ YIZZ +2+0",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700700000018"
+},
+{
+"layers": "XXZZ ++10 IZYX 32++ IIZH 32++ HYYX ++10 ZHHX +30+ HIZH +2+0 ZHHZ ++01",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 7,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140700700000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D8_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 8,
+"L": 16,
+"K": 4,
+"shots": 15000,
+"mle_shots": 1076,
+"bplomr_shots": 370,
+"seeds": [
+"18446140700800000000",
+"18446140700800000020"
+],
+"circuits": [
+{
+"layers": "XYIH ++10 IIYI +2+0 ZYYZ ++01 HHYI 1+3+ ZHZX 32++ ZZXI 1++2 IHXX +2+0 XHIY +2+0",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700800000000"
+},
+{
+"layers": "XZYY +0+2 ZIZZ 1+3+ IHZX 3+1+ IIXI 1+3+ IXZX +2+0 XYII 1++2 ZXHX ++01 ZIII 2++1",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140700800000001"
+},
+{
+"layers": "HYYH ++10 HXIH 32++ YIYY 32++ ZIYZ 1++2 YIHZ +2+0 YHIY 1++2 HYIY 32++ IHXH 32++",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140700800000002"
+},
+{
+"layers": "ZZXY 32++ YXIZ 1++2 IIXH ++10 HXYZ 32++ HIIX 1+3+ YHXZ +03+ HIHH ++10 IIXZ 3+1+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140700800000003"
+},
+{
+"layers": "ZZHY ++01 ZYYZ +30+ IXZZ +0+2 YYHY 3+1+ HXYY 2++1 HHZI 32++ ZYHH +30+ XYXX 2++1",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700800000004"
+},
+{
+"layers": "XHYI 1+3+ YHXZ +0+2 XXHX 23++ IHIZ 1++2 ZYYX ++01 ZXIH 1++2 YZXY 1++2 YXXY 23++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+2
+]
+],
+"seed": "18446140700800000005"
+},
+{
+"layers": "ZIYH 32++ HHYZ 2++1 IZII +2+0 YZYH +0+2 XHZZ 2++1 IXXZ +03+ HIZZ +03+ YXIZ 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700800000006"
+},
+{
+"layers": "HHYY 1+3+ XIYY 2++1 XYZZ 1++2 ZZHY +30+ YZIX 3+1+ YIHZ 3+1+ XHXH 2++1 YYZZ 1++2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+2
+]
+],
+"seed": "18446140700800000007"
+},
+{
+"layers": "XXXI +03+ ZYYX 1++2 HIZX 2++1 YYIH +30+ IHHI +0+2 HXHZ ++10 YHXX 3+1+ ZIHX +03+",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+1
+]
+],
+"seed": "18446140700800000008"
+},
+{
+"layers": "YHIZ +03+ ZZYI ++01 IZXZ 2++1 ZXHI ++10 YXXY +30+ HYIY +30+ ZIXH +0+2 YZIX 1+3+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140700800000009"
+},
+{
+"layers": "IHHX ++01 XXIX 1++2 IIZI 3+1+ ZIII ++01 ZZIY ++01 ZHHH +0+2 IIYX +2+0 ZXYY +0+2",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140700800000010"
+},
+{
+"layers": "XIHI 3+1+ YZZZ 3+1+ IZIH 1+3+ IXYZ 23++ ZYXX 2++1 YXHZ +03+ HXZH 2++1 YXZZ +2+0",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0
+],
+[
+1
+],
+[
+3
+]
+],
+"seed": "18446140700800000011"
+},
+{
+"layers": "YYYY +03+ YZXH +0+2 XXHY 2++1 ZIYZ +0+2 HHHY +30+ IHHY +30+ ZYHX +0+2 HYIX 3+1+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140700800000012"
+},
+{
+"layers": "IZZI +03+ HHIZ 1+3+ YXXZ +2+0 ZXYX 1+3+ XZHH 23++ ZHXZ ++01 HYIY ++01 ZHZY ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140700800000013"
+},
+{
+"layers": "IYIY +2+0 IIIH 1++2 HIHZ +2+0 ZHYH ++01 ZHZX +0+2 XZXH ++01 YZIY +03+ HYIH +2+0",
+"prep": "XXXX",
+"meas": "XXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700800000014"
+},
+{
+"layers": "IZIX ++01 HXXI ++01 HXIZ 23++ HIZX 32++ HZHY +03+ HIII +30+ HZXY ++10 YIYX 3+1+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+]
+],
+"seed": "18446140700800000015"
+},
+{
+"layers": "XHYH +0+2 XXHZ +30+ XHXX +03+ IHHH ++01 HHHX +0+2 YZYY +03+ IZZI +2+0 YYXX 32++",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140700800000016"
+},
+{
+"layers": "HXXH ++10 IYIZ 1+3+ YZXY 1++2 IZXZ +2+0 ZZZX 1+3+ IYXZ +03+ IHXY +03+ YHYX ++10",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700800000017"
+},
+{
+"layers": "YHXI +2+0 XXHI ++01 IZXX +0+2 YXHY +03+ IXYY 1++2 YHHH 23++ YXZH 23++ YIIY +30+",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+]
+],
+"seed": "18446140700800000018"
+},
+{
+"layers": "HYZI +30+ XZYI 1++2 ZIZI +0+2 HYIX 2++1 HXIZ 23++ YIII 1+3+ ZZIH 1+3+ YYYH 1+3+",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 8,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700800000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D9_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 9,
+"L": 18,
+"K": 4,
+"shots": 7800,
+"mle_shots": 0,
+"bplomr_shots": 200,
+"seeds": [
+"18446140700900000000",
+"18446140700900000020"
+],
+"circuits": [
+{
+"layers": "HZZH ++10 HYZH +2+0 HHHX 1+3+ XHHH 2++1 ZIIX ++01 YYZI +0+2 HZZZ +30+ IXIH +2+0 XYIX +0+2",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140700900000000"
+},
+{
+"layers": "ZIHZ 3+1+ HZHZ 32++ YIIZ +03+ YHIX 23++ HYIH 3+1+ IYYH 2++1 XHHX +2+0 IYXI 2++1 IHZX +30+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140700900000001"
+},
+{
+"layers": "ZHII 23++ ZIYX 1++2 ZHHI 2++1 HIYY 1++2 HZYX +03+ HIYI 32++ YZXH +03+ ZHIH ++10 HZXH 23++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700900000002"
+},
+{
+"layers": "YZIZ ++01 HXIX +0+2 XXHX +2+0 IIIH ++01 ZHZI ++01 XHIX +2+0 XHZH 2++1 IHIZ 1+3+ YHII +0+2",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1,
+2
+]
+],
+"seed": "18446140700900000003"
+},
+{
+"layers": "HYIZ +0+2 HHXX +30+ XHHY 3+1+ YHZX 2++1 HXIZ +03+ XYYX 2++1 ZHYH 1++2 HXXY 23++ IXXX 2++1",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+]
+],
+"seed": "18446140700900000004"
+},
+{
+"layers": "ZHYZ +30+ YYXZ 1++2 IXXH +03+ XYII 1+3+ ZXXX ++01 HXYZ 2++1 IHXX +0+2 IXYI 1++2 YZHH +30+",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+3
+]
+],
+"seed": "18446140700900000005"
+},
+{
+"layers": "IIXX +30+ ZXYH +2+0 HYHX 1+3+ ZXII 23++ HIXY 23++ YYYI ++10 XIHY ++10 YXIX ++10 HYXZ 32++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+3
+],
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700900000006"
+},
+{
+"layers": "YZXH 3+1+ HXHZ 32++ YXXY 3+1+ ZXIY 2++1 HZZY 23++ IXHX 32++ HIZY ++10 IXIH 1+3+ YYXY +0+2",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700900000007"
+},
+{
+"layers": "XYYY 2++1 ZHXX 23++ XYII ++01 ZHYH +30+ XZYY +2+0 ZXYY +0+2 HIIH 1++2 YIIX 2++1 HYHY 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+]
+],
+"seed": "18446140700900000008"
+},
+{
+"layers": "ZYIZ ++10 YIZX 2++1 IXHI ++10 ZXZI 3+1+ YZZZ +0+2 IHHY 1+3+ ZIYZ 1+3+ XYIZ +0+2 XYYI 23++",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140700900000009"
+},
+{
+"layers": "HXHX ++10 IHYH 3+1+ IZHZ 1+3+ IIIY 2++1 XYII +03+ XZIX ++01 YZII 2++1 ZIXH ++10 HZXI ++01",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140700900000010"
+},
+{
+"layers": "YHYY 1+3+ HHXZ 2++1 ZHZH 32++ IXHZ 1+3+ IYIY 32++ IZHY 1+3+ ZYXX +0+2 HZHH 3+1+ HXYH 2++1",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140700900000011"
+},
+{
+"layers": "ZXYZ 32++ IHHZ +03+ IHXX +30+ YZZX ++01 HZXY 3+1+ ZXIH +2+0 IHIX 3+1+ IXZI 1++2 XYYY 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140700900000012"
+},
+{
+"layers": "IHHY +03+ HYHI 32++ XHIH ++10 YYZZ +2+0 XIHY 1++2 HZYX 3+1+ ZZXX ++01 HXYH +2+0 YHZX 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+],
+[
+0
+]
+],
+"seed": "18446140700900000013"
+},
+{
+"layers": "ZHHZ ++01 IIYI 2++1 XXII ++01 IIXY ++10 ZYXY 1++2 YZHZ +0+2 IZHI +0+2 HHZX +30+ YXZX 32++",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0,
+3
+]
+],
+"seed": "18446140700900000014"
+},
+{
+"layers": "XHIX 23++ HIYH 1+3+ IZYZ 23++ XZXY 23++ ZYHY 23++ YZIX +0+2 IIHZ ++10 YXXY +03+ XHIY +03+",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700900000015"
+},
+{
+"layers": "XZHY +0+2 HXXZ +0+2 ZIXZ ++01 XXYZ +30+ ZIZI 1++2 YIZI +03+ HYHY ++10 ZZIH +30+ YHXH 23++",
+"prep": "XXXX",
+"meas": "ZXXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140700900000016"
+},
+{
+"layers": "XHHY +0+2 IHXH 23++ IIIX ++01 IIXZ ++01 IZYZ 32++ YIXY 32++ IXXZ ++01 XZYX 32++ IIYZ +30+",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+],
+[
+0,
+1
+]
+],
+"seed": "18446140700900000017"
+},
+{
+"layers": "IHYZ ++10 HZHZ 32++ XZXZ 3+1+ YYZI 3+1+ IIXI 1++2 YHZY +0+2 ZYHH 2++1 XHIH 3+1+ HYZZ 3+1+",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+]
+],
+"seed": "18446140700900000018"
+},
+{
+"layers": "YHXH 1++2 ZZZZ 3+1+ YYYH 23++ HIIY ++10 YYZX 3+1+ ZYHH ++10 IYZI 2++1 ZXHY 1+3+ HZHI ++10",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 9,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+]
+],
+"seed": "18446140700900000019"
+}
+],
+"purpose": "bench2"
+},
+{
+"name": "lukin_D10_d7_lukin_p3",
+"family": "lukin",
+"d": 7,
+"noise": "lukin",
+"p": 0.003,
+"depth": 10,
+"L": 20,
+"K": 4,
+"shots": 12000,
+"mle_shots": 0,
+"bplomr_shots": 310,
+"seeds": [
+"18446140701000000000",
+"18446140701000000020"
+],
+"circuits": [
+{
+"layers": "HIZZ ++10 IYHZ 2++1 XXHX +30+ HIYY 32++ YIZI 32++ ZXYZ 1++2 HYZI 3+1+ YXXY 23++ YHZI 23++ ZIHX ++10",
+"prep": "XXXX",
+"meas": "ZXXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 0,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2
+]
+],
+"seed": "18446140701000000000"
+},
+{
+"layers": "ZXZX 32++ HXXY 1+3+ XZXI +30+ IYYX 1+3+ YHXZ ++01 YIII 3+1+ YXYY 23++ IZIX 32++ ZXXZ 1+3+ YIIX 1+3+",
+"prep": "XXXX",
+"meas": "ZXZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 1,
+"target_slot": 0,
+"products": [
+[
+1,
+3
+],
+[
+0
+]
+],
+"seed": "18446140701000000001"
+},
+{
+"layers": "IYYZ 2++1 HZZX +30+ HIXI 32++ YXHY 32++ IYYI 2++1 YYXZ 1+3+ ZHII 23++ ZZIY 1++2 XIXX +2+0 HZXY 1++2",
+"prep": "XXXX",
+"meas": "ZZXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 2,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+]
+],
+"seed": "18446140701000000002"
+},
+{
+"layers": "IXZX +2+0 YYHX ++01 ZYYZ 32++ IYXX 3+1+ ZZII ++10 HIZH 3+1+ XZYI +30+ HZZI 1+3+ YHXX 1++2 YHHI 32++",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 3,
+"target_slot": 0,
+"products": [
+[
+2
+],
+[
+0,
+1
+]
+],
+"seed": "18446140701000000003"
+},
+{
+"layers": "ZXYY +03+ XYIH +30+ HHYH 1+3+ YHXH 23++ ZHIY 1+3+ IHXI +03+ HXZZ 3+1+ XHHI +30+ YHYY +2+0 ZYXI ++10",
+"prep": "XXXX",
+"meas": "ZZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 4,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+]
+],
+"seed": "18446140701000000004"
+},
+{
+"layers": "IYIY ++01 HZYH 1++2 YIZY 1+3+ XYYX +0+2 YHXZ 1++2 IHIZ 3+1+ ZZIX 1+3+ ZZHI 3+1+ XIII 2++1 IHHH +03+",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 5,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+3
+]
+],
+"seed": "18446140701000000005"
+},
+{
+"layers": "HYHX 32++ ZIYY 23++ IHYH +0+2 HYHH 2++1 IYHZ +30+ YYYH +30+ IHYI ++01 HXHH ++01 XXXX +03+ IHYY 1++2",
+"prep": "XXXX",
+"meas": "XZXZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 6,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140701000000006"
+},
+{
+"layers": "ZIZH 2++1 HHXY 2++1 IYHH +03+ ZIII 1++2 XXZZ +2+0 ZIYX 1+3+ IYXX ++01 YHYX 32++ HYYH ++10 IHHI +0+2",
+"prep": "XXXX",
+"meas": "XZXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 7,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140701000000007"
+},
+{
+"layers": "YYII +0+2 IYXI 32++ YZXY 32++ YYXZ 1++2 YZXZ +2+0 HZHH +30+ YZHY ++10 IZHY +2+0 IXYX +0+2 XXYX +03+",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 8,
+"target_slot": 0,
+"products": [
+[
+0
+]
+],
+"seed": "18446140701000000008"
+},
+{
+"layers": "XXIZ +2+0 YYXI 3+1+ IYII 23++ HZIH 1++2 ZHZX 1+3+ YIZI 3+1+ XHHZ +0+2 YYHI +2+0 ZHHH +0+2 HYIZ 1+3+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 9,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+]
+],
+"seed": "18446140701000000009"
+},
+{
+"layers": "HZZY 32++ ZYYH 1++2 HXYZ ++01 IXZY +2+0 XIHX +30+ XHII +2+0 HIHY +30+ YYZH 32++ ZHXZ 2++1 XZYI 1+3+",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 10,
+"target_slot": 0,
+"products": [
+[
+1,
+2
+],
+[
+0,
+3
+]
+],
+"seed": "18446140701000000010"
+},
+{
+"layers": "XXHZ ++01 IIHI 3+1+ IYZH +0+2 HYYI 1++2 XHXY 1+3+ YZXI 2++1 HYXX 1+3+ IHXY 2++1 XYYX 1++2 XZHY 1+3+",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 11,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0
+],
+[
+1,
+2
+]
+],
+"seed": "18446140701000000011"
+},
+{
+"layers": "IZXI +0+2 HIZZ +30+ ZYIZ ++01 YYXZ 23++ IXIZ 3+1+ XIXZ +03+ ZXHH 3+1+ YYYX +30+ HYXZ +03+ HXYZ 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 12,
+"target_slot": 0,
+"products": [
+[
+2,
+3
+],
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"seed": "18446140701000000012"
+},
+{
+"layers": "XYYY +2+0 YIIH +30+ HIYI 32++ IZHX +03+ HYHZ 2++1 YHYX 2++1 XIXX 32++ YZIX 23++ IIZI +30+ ZHYY +03+",
+"prep": "XXXX",
+"meas": "ZZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 13,
+"target_slot": 0,
+"products": [
+[
+0,
+2,
+3
+],
+[
+1
+]
+],
+"seed": "18446140701000000013"
+},
+{
+"layers": "XYHX +2+0 IHIX ++01 XHIH 32++ ZIIX 1+3+ YIIY ++01 XZXZ ++01 YYXI 32++ XZZX +0+2 XXIZ ++01 YHIH 1++2",
+"prep": "XXXX",
+"meas": "XZZX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 14,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140701000000014"
+},
+{
+"layers": "ZZZZ +0+2 ZYIX +2+0 IIZZ 32++ IYHI +0+2 XIIZ 23++ IYHY ++01 HIIZ +30+ XXHY 32++ XIYI 23++ IIYH ++10",
+"prep": "XXXX",
+"meas": "ZXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 15,
+"target_slot": 0,
+"products": [
+[
+1,
+2,
+3
+],
+[
+0
+],
+[
+1
+],
+[
+2
+]
+],
+"seed": "18446140701000000015"
+},
+{
+"layers": "ZXHI 3+1+ HIIH 23++ XHZY +03+ ZIXH +30+ IIHY 2++1 ZXIY 23++ HYHX 23++ IIIZ 23++ XXZY +0+2 HYZY 23++",
+"prep": "XXXX",
+"meas": "ZZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 16,
+"target_slot": 0,
+"products": [
+[
+0,
+1
+],
+[
+2
+],
+[
+3
+]
+],
+"seed": "18446140701000000016"
+},
+{
+"layers": "HYZZ 23++ IZYH ++01 XZHH ++10 YYXX 2++1 XYYI +03+ YYHZ 1++2 HXZY 1+3+ HIHX 23++ ZIHX 3+1+ ZHXX 1++2",
+"prep": "XXXX",
+"meas": "XXXX",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 17,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0
+]
+],
+"seed": "18446140701000000017"
+},
+{
+"layers": "IXIH 23++ YHIH ++10 IHYI 32++ IXIX 3+1+ HYHI 1++2 IHZH +0+2 IHHY +2+0 IIII +03+ HHIY 1++2 ZIZZ 2++1",
+"prep": "XXXX",
+"meas": "XZZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 18,
+"target_slot": 0,
+"products": [
+[
+0,
+2
+]
+],
+"seed": "18446140701000000018"
+},
+{
+"layers": "YHYY 2++1 YYXZ +0+2 XYIZ ++01 YIYH 1+3+ ZXHY 1++2 XYYI ++10 HXXZ 1+3+ ZXXI 3+1+ HIYY 1++2 HXIZ 32++",
+"prep": "XXXX",
+"meas": "XXZZ",
+"pauli": "gate",
+"cnot_layers": 10,
+"index": 19,
+"target_slot": 0,
+"products": [
+[
+0,
+1,
+2,
+3
+],
+[
+0,
+2
+]
+],
+"seed": "18446140701000000019"
+}
+],
+"purpose": "bench2"
+}
+]
+}

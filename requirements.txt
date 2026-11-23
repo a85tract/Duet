@@ -1,0 +1,13 @@
+# Pinned versions of the packages the paper's results were produced with (Python 3.12, Linux x86-64 and aarch64).
+numpy==2.5.4
+scipy==1.18.1
+stim==1.16.0
+pymatching==2.4.0
+lomatching==0.3.0
+ldpc==2.4.1
+tesseract-decoder==0.1.1.dev20260822020007
+torch==2.11.0
+triton==3.6.0
+pyscipopt==6.3.0
+pytest==9.2.0
+matplotlib==3.11.2

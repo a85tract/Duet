@@ -1,0 +1,14 @@
+Benchmark I grace d=3 bar 47.4: pick f=1% (dev 30357 vs best 30057, 1.2us) | TEST cap 0.001 fails 118764 1.2us vsLoM 0.5471 vsNet 0.9711 | f=20% cap 0.001 fails 117766 1.8us vsLoM 0.5406 vsNet 0.9596
+Benchmark I grace d=5 bar 103.3: pick f=2% (dev 2893 vs best 2874, 6.2us) | TEST cap 0.05 fails 11662 6.8us vsLoM 0.2045 vsNet 0.7081 | f=20% cap 0.05 fails 11585 24.3us vsLoM 0.2030 vsNet 0.7025
+Benchmark I grace d=7 bar 185.2: pick f=2% (dev 264 vs best 262, 26.3us) | TEST cap none fails 1087 27.1us vsLoM 0.0765 vsNet 0.4317 | f=20% cap none fails 1080 96.4us vsLoM 0.0759 vsNet 0.4284
+Benchmark I grace d=9 bar 302.2: pick f=2% (dev 34 vs best 34, 65.2us) | TEST cap none fails 104 66.4us vsLoM 0.0225 vsNet 0.1541 | f=20% cap none fails 102 270.0us vsLoM 0.0223 vsNet 0.1525
+Benchmark I spark d=3 bar 47.4: pick f=2% (dev 30188 vs best 30057, 4.5us) | TEST cap none fails 118101 4.4us vsLoM 0.5429 vsNet 0.9636 | f=20% cap none fails 117770 6.6us vsLoM 0.5407 vsNet 0.9596
+Benchmark I spark d=5 bar 103.3: pick f=2% (dev 2893 vs best 2874, 22.6us) | TEST cap 0.05 fails 11662 24.8us vsLoM 0.2045 vsNet 0.7081 | f=20% cap 0.05 fails 11585 86.0us vsLoM 0.2030 vsNet 0.7025
+Benchmark I spark d=7 bar 185.2: pick f=2% (dev 264 vs best 262, 91.5us) | TEST cap none fails 1087 93.7us vsLoM 0.0765 vsNet 0.4317 | f=20% cap 0.005 fails 1237 155.1us vsLoM 0.0854 vsNet 0.4816
+Benchmark I spark d=9 bar 302.2: pick f=2% (dev 34 vs best 34, 231.2us) | TEST cap none fails 104 236.1us vsLoM 0.0225 vsNet 0.1541 | f=20% cap 0.005 fails 310 287.6us vsLoM 0.0581 vsNet 0.3977
+Benchmark II grace d=3 bar 47.4: pick f=0.5% (dev 6349 vs best 6300, 1.2us) | TEST cap 0.002 fails 2818 1.2us vsLoM 0.556 vsNet 0.992 (a) 0.866 (b) 0.868 | f=20% cap none fails 2763 3.3us vsLoM 0.544 vsNet 0.971 (a) 0.849 (b) 0.851
+Benchmark II grace d=5 bar 103.3: pick f=5% (dev 4490 vs best 4484, 16.8us) | TEST cap 0.02 fails 1520 20.8us vsLoM 0.185 vsNet 0.714 (a) 0.705 (b) 0.751 | f=20% cap 0.02 fails 1519 49.3us vsLoM 0.184 vsNet 0.710 (a) 0.705 (b) 0.747
+Benchmark II grace d=7 bar 185.2: pick f=10% (dev 358 vs best 357, 138.9us) | TEST cap none fails 1186 152.7us vsLoM 0.063 vsNet 0.372 (a) 0.299 (b) 0.600 | f=20% cap 0.1 fails 1186 198.0us vsLoM 0.063 vsNet 0.371 (a) 0.299 (b) 0.600
+Benchmark II spark d=3 bar 47.4: pick f=0.5% (dev 6349 vs best 6300, 5.0us) | TEST cap 0.002 fails 2818 5.1us vsLoM 0.556 vsNet 0.992 (a) 0.866 (b) 0.868 | f=20% cap none fails 2763 9.9us vsLoM 0.544 vsNet 0.971 (a) 0.849 (b) 0.851
+Benchmark II spark d=5 bar 103.3: pick f=5% (dev 4491 vs best 4485, 59.0us) | TEST cap 0.02 fails 1520 72.6us vsLoM 0.185 vsNet 0.714 (a) 0.705 (b) 0.751 | f=20% cap 0.002 fails 1550 107.8us vsLoM 0.187 vsNet 0.722 (a) 0.719 (b) 0.759
+Benchmark II spark d=7 bar 185.2: pick f=2% (dev 372 vs best 371, 176.5us) | TEST cap none fails 1209 193.8us vsLoM 0.065 vsNet 0.385 (a) 0.305 (b) 0.607 | f=20% cap 0.001 fails 3605 159.9us vsLoM 0.199 vsNet 1.173 (a) 0.910 (b) 1.626

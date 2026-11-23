@@ -1,0 +1,7 @@
+Duet
+Copyright 2026 The Duet authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party material in third_party/ keeps its own license and notice: CoDecoder (Apache-2.0; the network code in duet/net is
+adapted from it, each adapted file names its source) and data-lom-decoders (MIT; two data files read by duet/bench_sets.py).
