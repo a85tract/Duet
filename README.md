@@ -19,7 +19,7 @@ distance.
 | `duet/` | the Python package: circuits and noise, the network, the training loop, the inference engine, the decoders |
 | `scripts/` | command-line drivers: sample test sets, decode with each decoder, route to Tesseract, time the paced stream, train |
 | `paper/` | scripts, data and reference output that regenerate every table and figure of the paper (`paper/README.md`) |
-| `data/` | the circuits of Benchmark II (Lukin family of the open benchmark), the published Fig. 1b values, the Benchmark II manifests (`data/README.md`) |
+| `data/` | the circuits of Benchmark II (Lukin family of the open benchmark), the published Fig. 1b values, the Benchmark II manifests (`data/README.md`), and the index of the raw data (`data/RAW_DATA.md`) |
 | `networks/` | the trained network files of the paper's results with their checksums (`networks/NETWORKS.md`) |
 | `tests/` | unit and smoke tests (CPU; the engine tests need a GPU and skip without one) |
 | `third_party/` | code and data adapted from other projects, with their licenses |
@@ -116,6 +116,16 @@ budget-matched Tesseract presets and a frozen operating point on a test set. The
 reference platform (Appendix E of the paper) takes a calibration factor per CPU model as `--cal`; the factors the paper used
 are in the appendix text, and the calibration jobs themselves were cluster launchers that are not included.
 `scripts/quickstart.sh` runs the whole chain at toy size.
+
+## Raw data
+
+The raw records behind the paper are in the release
+[data-v1](https://github.com/a85tract/Duet/releases/tag/data-v1): the per-shot outputs of every decoder we ran (the
+network, Tesseract, the exact most-likely-error decoder, LoMatching, Cain et al., BP+LoMatching), the timing records of
+the paced stream, the job records of every test and development stage, and the networks trained along the way.
+`data/RAW_DATA.md` lists each archive with its size, SHA-256 and content, and shows how to check it. The stored shots are
+not in the release: the code regenerates them from their seeds, and `data/raw/detection_events.tsv` gives the SHA-256 of
+each shot file to compare against.
 
 ## Hardware
 
